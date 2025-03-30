@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT PRACTISER</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Heading style */
+    #mainHeading {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2.5em;
+      margin: 20px 0;
+      color: #2c3e50;
+    }
+    /* Filter Section */
+    #filterSection {
+      width: 95%;
+      max-width: 1200px;
+      margin: 0 auto 20px;
+      padding: 10px;
+      border: 2px solid #2980b9;
+      border-radius: 8px;
+      background-color: #ecf0f1;
+    }
+    .filter-group {
+      margin-bottom: 15px;
+    }
+    .filter-group .group-label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .filter-buttons {
+      margin-top: 15px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 1em;
+      background-color: #2980b9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background-color: #1f6391;
+    }
+    /* Timer (for Quiz mode) */
+    #timer {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #e74c3c;
+    }
+    /* Main content area */
+    #quizSection {
+      width: 95%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .question-block {
+      border-bottom: 1px solid #bdc3c7;
+      padding: 15px 0;
+    }
+    .question-block p {
+      margin: 10px 0;
+    }
+    /* Options container */
+    .options-container {
+      margin: 10px 0;
+    }
+    .options-container label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    /* Answer container: for apply filters mode */
+    .answer-container {
+      margin-top: 10px;
+    }
+    #finalScore {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Heading -->
+  <h1 id="mainHeading">IoT PRACTISER</h1>
+
+  <!-- Filter Section -->
+  <div id="filterSection">
+    <form id="filterForm">
+      <!-- Week Filter -->
+      <div class="filter-group" id="weekFilterGroup">
+        <span class="group-label">Filter by Week:</span>
+        <div class="checkbox-group" id="weekCheckboxes">
+          <!-- Only the "All Weeks" checkbox is checked by default -->
+          <label><input type="checkbox" name="week" value="all" id="weekAll" checked> All Weeks</label>
+          <label><input type="checkbox" name="week" value="1"> Week 1</label>
+          <label><input type="checkbox" name="week" value="2"> Week 2</label>
+          <label><input type="checkbox" name="week" value="3"> Week 3</label>
+          <label><input type="checkbox" name="week" value="4"> Week 4</label>
+          <label><input type="checkbox" name="week" value="5"> Week 5</label>
+          <label><input type="checkbox" name="week" value="6"> Week 6</label>
+          <label><input type="checkbox" name="week" value="7"> Week 7</label>
+          <label><input type="checkbox" name="week" value="8"> Week 8</label>
+          <label><input type="checkbox" name="week" value="9"> Week 9</label>
+          <label><input type="checkbox" name="week" value="10"> Week 10</label>
+          <label><input type="checkbox" name="week" value="11"> Week 11</label>
+          <label><input type="checkbox" name="week" value="12"> Week 12</label>
+        </div>
+      </div>
+      <!-- Topic Filter -->
+      <div class="filter-group" id="topicFilterGroup">
+        <span class="group-label">Filter by Topic:</span>
+        <div class="checkbox-group" id="topicCheckboxes">
+          <!-- Only the "All Topics" checkbox is checked by default -->
+          <label><input type="checkbox" name="topic" value="all" id="topicAll" checked> All Topics</label>
+          <!-- Topics will be loaded from topics.txt -->
+        </div>
+      </div>
+      <!-- Search Bar Filter -->
+      <div class="filter-group" id="searchFilterGroup">
+        <span class="group-label">Search:</span>
+        <input type="text" id="searchInput" placeholder="Enter search term..." style="padding: 5px; width: 60%;">
+      </div>
+      <!-- Two buttons for functionalities -->
+      <div class="filter-buttons">
+        <button type="button" id="quizButton">Quiz</button>
+        <button type="button" id="applyButton">Apply Filters</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Timer display (only for Quiz mode) -->
+  <div id="timer"></div>
+
+  <!-- Main Section to display output -->
+  <div id="quizSection"></div>
+  <div id="finalScore"></div>
+
+  <!-- Data file with questions -->
+  <script src="data.js"></script>
+
+  <!-- Main JavaScript -->
+  <script>
+    let score = 0;
+    let totalQuestions = 0;
+    let quizTimerInterval = null; // Store the quiz timer interval
+
+    // Global array to store user responses in quiz mode.
+    // Each index will store the selected option index (as string) for that question.
+    let userResponses = [];
+
+    // Timer functions for Quiz mode.
+    function startQuizTimer(duration) {
+      const timerDisplay = document.getElementById('timer');
+      let timeLeft = duration;
+      timerDisplay.textContent = formatTime(timeLeft);
+      quizTimerInterval = setInterval(function() {
+        timeLeft--;
+        timerDisplay.textContent = formatTime(timeLeft);
+        if (timeLeft <= 0) {
+          clearInterval(quizTimerInterval);
+          quizTimerInterval = null;
+          finalizeQuiz();
+        }
+      }, 1000);
+    }
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      return minutes + ":" + (secs < 10 ? "0" + secs : secs);
+    }
+
+    // When DOM is ready, load topics and setup event listeners.
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load topics from topics.txt
+      fetch('topics.txt')
+        .then(response => response.text())
+        .then(text => {
+          const topics = text.split('\n').map(line => line.trim()).filter(line => line !== '');
+          const topicContainer = document.getElementById('topicCheckboxes');
+          topics.forEach(topic => {
+            const label = document.createElement('label');
+            label.innerHTML = `<input type="checkbox" name="topic" value="${topic}"> ${topic}`;
+            topicContainer.appendChild(label);
+          });
+        })
+        .catch(error => console.error('Error loading topics:', error));
+
+      // Setup "Select All" functionality for Week and Topic filters.
+      setupSelectAll('week', 'weekAll');
+      setupSelectAll('topic', 'topicAll');
+
+      // Attach event listeners for the two buttons.
+      document.getElementById('quizButton').addEventListener('click', generateQuiz);
+      document.getElementById('applyButton').addEventListener('click', generateApplyFilters);
+    });
+
+    // Setup "Select All" behavior for a given group.
+    function setupSelectAll(groupName, allCheckboxId) {
+      const allCheckbox = document.getElementById(allCheckboxId);
+      const groupCheckboxes = Array.from(document.querySelectorAll('input[name="' + groupName + '"]')).filter(cb => cb.id !== allCheckboxId);
+      allCheckbox.addEventListener('change', function() {
+        groupCheckboxes.forEach(cb => { cb.checked = allCheckbox.checked; });
+      });
+      groupCheckboxes.forEach(cb => {
+        cb.addEventListener('change', function() {
+          if (!cb.checked) {
+            allCheckbox.checked = false;
+          } else {
+            if (groupCheckboxes.every(x => x.checked)) {
+              allCheckbox.checked = true;
+            }
+          }
+        });
+      });
+    }
+
+    // Helper: Get values of checked checkboxes for a given group.
+    function getCheckedValues(groupName) {
+      const checkboxes = document.querySelectorAll('input[name="' + groupName + '"]:checked');
+      return Array.from(checkboxes).map(cb => cb.value);
+    }
+
+    // Helper: Randomly select up to num questions from an array.
+    function getRandomQuestions(arr, num) {
+      const shuffled = arr.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, Math.min(num, arr.length));
+    }
+
+    // Generate Quiz mode:
+    // In Quiz mode, questions are displayed with radio button options.
+    // User selections are stored. When the quiz is submitted (or time runs out),
+    // the correct answer for each question is revealed along with the final score.
+    function generateQuiz() {
+      // Clear any previous timer and reset responses.
+      if (quizTimerInterval) {
+        clearInterval(quizTimerInterval);
+        quizTimerInterval = null;
+      }
+      userResponses = [];
+      score = 0;
+      totalQuestions = 0;
+      const quizSection = document.getElementById('quizSection');
+      quizSection.innerHTML = '';
+      document.getElementById('finalScore').innerHTML = '';
+      document.getElementById('timer').textContent = '';
+
+      const selectedWeeks = getCheckedValues('week');
+      const selectedTopics = getCheckedValues('topic');
+      let filteredData = data.slice();
+
+      // Apply Week filter.
+      if (!selectedWeeks.includes('all') && selectedWeeks.length > 0) {
+        filteredData = filteredData.filter(item => selectedWeeks.includes(item.week.toString()));
+      }
+      // Apply Topic filter.
+      if (!selectedTopics.includes('all') && selectedTopics.length > 0) {
+        filteredData = filteredData.filter(item => selectedTopics.includes(item.topic));
+      }
+      
+      totalQuestions = filteredData.length;
+      if (totalQuestions === 0) {
+        quizSection.innerHTML = '<p>No questions match the selected filters.</p>';
+        return;
+      }
+
+      // In Quiz mode, limit to 20 questions if possible.
+      if (totalQuestions > 20) {
+        filteredData = filteredData.slice(0, 20);
+        totalQuestions = 20;
+      }
+      
+      // Start the 20‑minute timer (20*60 seconds) only for Quiz mode.
+      startQuizTimer(20 * 60);
+
+      // Create question blocks.
+      filteredData.forEach((questionObj, index) => {
+        const currentIndex = index; // local index
+        userResponses[currentIndex] = null; // initialize response as null
+
+        const questionDiv = document.createElement('div');
+        questionDiv.classList.add('question-block');
+        questionDiv.id = 'question-block-' + currentIndex;
+
+        const questionText = document.createElement('p');
+        questionText.textContent = (index + 1) + '. ' + questionObj.question;
+        questionDiv.appendChild(questionText);
+
+        // Create options (radio buttons)
+        const optionsDiv = document.createElement('div');
+        optionsDiv.className = 'options-container';
+        questionObj.options.forEach((option, optIndex) => {
+          const label = document.createElement('label');
+          label.innerHTML = `<input type="radio" name="q-${currentIndex}" value="${optIndex}"> ${option}`;
+          optionsDiv.appendChild(label);
+        });
+        questionDiv.appendChild(optionsDiv);
+
+        quizSection.appendChild(questionDiv);
+      });
+
+      const finalSubmitBtn = document.createElement('button');
+      finalSubmitBtn.textContent = 'Submit Quiz';
+      finalSubmitBtn.style.display = 'block';
+      finalSubmitBtn.style.margin = '20px auto';
+      finalSubmitBtn.addEventListener('click', finalizeQuiz);
+      quizSection.appendChild(finalSubmitBtn);
+    }
+
+    // Finalize Quiz: Check all responses, calculate score, and reveal correct answers.
+    function finalizeQuiz() {
+      // Stop the timer if still running.
+      if (quizTimerInterval) {
+        clearInterval(quizTimerInterval);
+        quizTimerInterval = null;
+      }
+      score = 0;
+      const quizSection = document.getElementById('quizSection');
+      
+      // Loop through each question block to check user's selected option.
+      for (let i = 0; i < totalQuestions; i++) {
+        const questionBlock = document.getElementById('question-block-' + i);
+        const radios = document.getElementsByName('q-' + i);
+        let selectedValue = null;
+        radios.forEach(radio => {
+          if (radio.checked) {
+            selectedValue = parseInt(radio.value);
+          }
+        });
+        userResponses[i] = selectedValue;
+
+        // Get the corresponding question object.
+        const questionObj = data[i]; // assuming filteredData order matches data order in quiz mode
+        // (if not, you might need to store filteredData in a global variable)
+
+        // Create an answer summary element.
+        const answerSummary = document.createElement('div');
+        answerSummary.className = 'answer-container';
+        if (selectedValue === questionObj.answer) {
+          answerSummary.innerHTML = `<p style="color: green; font-weight: bold;">Correct! The answer is: ${questionObj.options[questionObj.answer]}</p>`;
+          score++;
+        } else {
+          answerSummary.innerHTML = `<p style="color: red; font-weight: bold;">Incorrect! Your answer: ${selectedValue !== null ? questionObj.options[selectedValue] : 'No answer'} | Correct answer: ${questionObj.options[questionObj.answer]}</p>`;
+        }
+        questionBlock.appendChild(answerSummary);
+      }
+      document.getElementById('finalScore').innerHTML =
+        '<h2>Your Score: ' + score + ' / ' + totalQuestions + '</h2>';
+    }
+
+    // Generate Apply Filters mode:
+    // In this mode, each question is rendered with options and a "Submit Answer" button.
+    // When a user submits, the correct answer is immediately revealed.
+    function generateApplyFilters() {
+      // Stop any running timer.
+      if (quizTimerInterval) {
+        clearInterval(quizTimerInterval);
+        quizTimerInterval = null;
+      }
+      document.getElementById('timer').textContent = '';
+      score = 0;
+      totalQuestions = 0;
+      const quizSection = document.getElementById('quizSection');
+      quizSection.innerHTML = '';
+      document.getElementById('finalScore').innerHTML = '';
+
+      const selectedWeeks = getCheckedValues('week');
+      const selectedTopics = getCheckedValues('topic');
+      let filteredData = data.slice();
+
+      if (!selectedWeeks.includes('all') && selectedWeeks.length > 0) {
+        filteredData = filteredData.filter(item => selectedWeeks.includes(item.week.toString()));
+      }
+      if (!selectedTopics.includes('all') && selectedTopics.length > 0) {
+        filteredData = filteredData.filter(item => selectedTopics.includes(item.topic));
+      }
+
+      // Apply Search filter.
+      const searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
+      if (searchQuery !== '') {
+        filteredData = filteredData.filter(item =>
+          item.question.toLowerCase().includes(searchQuery) ||
+          item.options.some(opt => opt.toLowerCase().includes(searchQuery))
+        );
+      }
+
+      // Group filtered questions by week.
+      const groupedByWeek = {};
+      filteredData.forEach(q => {
+        if (!groupedByWeek[q.week]) {
+          groupedByWeek[q.week] = [];
+        }
+        groupedByWeek[q.week].push(q);
+      });
+
+      const weeks = Object.keys(groupedByWeek).sort((a, b) => a - b);
+      if (weeks.length === 0) {
+        quizSection.innerHTML = '<p>No questions match the selected filters.</p>';
+        return;
+      }
+
+      weeks.forEach(week => {
+        const weekHeading = document.createElement('h2');
+        weekHeading.textContent = 'Week ' + week;
+        quizSection.appendChild(weekHeading);
+
+        const groupedByTopic = {};
+        groupedByWeek[week].forEach(q => {
+          if (!groupedByTopic[q.topic]) {
+            groupedByTopic[q.topic] = [];
+          }
+          groupedByTopic[q.topic].push(q);
+        });
+
+        const topics = Object.keys(groupedByTopic).sort();
+        topics.forEach(topic => {
+          const topicHeading = document.createElement('h3');
+          topicHeading.textContent = topic;
+          quizSection.appendChild(topicHeading);
+
+          groupedByTopic[topic].forEach((questionObj, index) => {
+            totalQuestions++;
+            const currentQuestion = totalQuestions - 1; // zero-indexed
+
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('question-block');
+            questionDiv.id = 'af-question-' + currentQuestion;
+
+            const questionText = document.createElement('p');
+            questionText.textContent = (totalQuestions) + '. ' + questionObj.question;
+            questionDiv.appendChild(questionText);
+
+            // Create options (radio buttons)
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = 'options-container';
+            questionObj.options.forEach((option, optIndex) => {
+              const label = document.createElement('label');
+              label.innerHTML = `<input type="radio" name="af-q-${currentQuestion}" value="${optIndex}"> ${option}`;
+              optionsDiv.appendChild(label);
+            });
+            questionDiv.appendChild(optionsDiv);
+
+            // Create a submit button for this question.
+            const submitBtn = document.createElement('button');
+            submitBtn.textContent = 'Submit Answer';
+            submitBtn.addEventListener('click', function() {
+              const radios = document.getElementsByName('af-q-' + currentQuestion);
+              let selectedValue = null;
+              radios.forEach(radio => {
+                if (radio.checked) {
+                  selectedValue = parseInt(radio.value);
+                }
+              });
+              // Disable all radio buttons.
+              radios.forEach(radio => radio.disabled = true);
+              submitBtn.disabled = true;
+              // Reveal the correct answer.
+              const answerDiv = document.createElement('div');
+              answerDiv.className = 'answer-container';
+              if (selectedValue === questionObj.answer) {
+                answerDiv.innerHTML = `<p style="color: green; font-weight: bold;">Correct! The answer is: ${questionObj.options[questionObj.answer]}</p>`;
+                score++;
+              } else {
+                answerDiv.innerHTML = `<p style="color: red; font-weight: bold;">Incorrect! Your answer: ${selectedValue !== null ? questionObj.options[selectedValue] : 'No answer'} | Correct answer: ${questionObj.options[questionObj.answer]}</p>`;
+              }
+              questionDiv.appendChild(answerDiv);
+            });
+            questionDiv.appendChild(submitBtn);
+            quizSection.appendChild(questionDiv);
+          });
+        });
+      });
+    }
+  </script>
+</body>
+</html>
