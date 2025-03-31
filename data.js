@@ -78,7 +78,8 @@ const data = [
     week: 5
   },
   {
-    question: "What does the following code do?\n\nint ledPin = 13;\nvoid setup() {\npinMode(ledPin, OUTPUT);\nfor (int i = 0; i < 3; i++) {\ndigitalWrite(ledPin, HIGH);\ndelay(1000);\ndigitalWrite(ledPin, LOW);\ndelay(500);\n}\n}\nvoid loop() {\n// Do nothing\n}",
+    question: "What does the following code do?",
+    image:"images/ass5que10.png",
     options: [
       "Blink 3 times with 1000ms ON and 500ms OFF",
       "Blink 3 times with 500ms ON and 500ms OFF",
@@ -236,6 +237,7 @@ const data = [
   },
   {
     question: "What must be inserted in the place of ‘??’ within the second pinMode() function in void setup()?",
+    image:"images/ass5que112023.png",
     options: ["INPUT", "OUTPUT", "None of these", "Anyone of these is okay"],
     answer: 1,
     topic: "Arduino",
@@ -367,6 +369,7 @@ const data = [
   },
   {
     question: "Consider the following Arduino sketch. What must be inserted in the place of ‘??’ within the second pinMode() function in void setup()?",
+    image:"images/ass5que112023.png",
     options: ["INPUT", "OUTPUT", "None of these", "Anyone of these is okay"],
     answer: 1,
     topic: "Arduino",
