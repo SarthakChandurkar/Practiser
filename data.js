@@ -1,4 +1,237 @@
 const data = [
+    {
+      question: "Python doesn’t support strict rules for syntax and static variable declaration like C.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Fill in the blanks. __________ is a data-type in Python.",
+      options: ["List", "Tuple", "Dictionary", "All of these"],
+      answer: 3,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Fill in the blanks. __________ are the variables declared inside a function.",
+      options: ["Immediate variables", "Global variables", "Local variables", "None of these"],
+      answer: 2,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "What does the open() function return for file operations?",
+      options: ["File mode", "File object", "File name", "None of these"],
+      answer: 1,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Python does not follow rigid indentation.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Which of the following is used to display an image in Python?",
+      options: ["image.show()", "image.open()", "image.name()", "image.mode()"],
+      answer: 0,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Which of the following models does Python follow for networking?",
+      options: ["Client-server", "P2P", "All of these", "None of these"],
+      answer: 0,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "In Python, 'with' ensures the file is closed after the operation is completed, but not when an exception occurs.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "In Raspberry Pi, GPIO acts only as a digital output.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Which of the following exits the nano editor in the terminal?",
+      options: ["Ctrl+O", "Ctrl+X", "Ctrl+A", "None of these"],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Does Raspberry Pi provide configuration options for cameras?",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Does Python provide a module for Pi-camera?",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Which of the following converts energy to motion?",
+      options: ["Actuator", "Raspberry Pi", "All of these", "None of these"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Which of the following is a property of a Relay?",
+      options: ["Mechanical switch", "Electrochemical switch", "None of these", "All of these"],
+      answer: 3,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Sensors can be neither analog nor digital.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 6
+    }
+    
+    
+  ,
+    {
+      question: "Python can only be used to build small applications.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Which of the following is NOT a Python IDE?",
+      options: ["Spyder", "PyCharm", "Both (a) and (b)", "None of these"],
+      answer: 3,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "To indicate different blocks of code, Python follows rigid indentation.",
+      options: ["False", "True"],
+      answer: 1,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Which of the following is not a data-type in Python?",
+      options: ["List", "Branch", "Tuple", "None of these"],
+      answer: 1,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Python allows us to read and write files.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Which of the following is NOT a mode to open a file?",
+      options: ["Read mode", "Write mode", "Append mode", "None of these"],
+      answer: 3,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "State whether the following command to install the PIL library in Linux is correct or not.",
+      image:"images/ass6que72024.png",
+      options: ["Correct", "Incorrect"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "State whether the following statement is correct for creating a socket ‘s’ in python.",
+      image:"images/ass6que82024.png",
+      options: ["Correct", "Incorrect"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "What is a Raspberry Pi?",
+      options: [
+        "A computer on your palm",
+        "Single board computer",
+        "Low cost",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Which of the following are required for a basic setup of Raspberry Pi?",
+      options: ["Monitor", "Keyboard", "Mouse", "All of these"],
+      answer: 3,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Which of the following keyboard key combination writes (i.e saves) the code to the file in nano editor?",
+      options: ["Ctrl+O", "Ctrl+X", "Both (a) and (b)", "None of these"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "A relay module for Raspberry Pi has how many terminals?",
+      options: ["3", "2", "4", "5"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Adafruit provides a library to work with the DHT22 sensor.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "What is the function of the close() function in python programming while handling files?",
+      options: [
+        "This function does not exist in python",
+        "It closes the current connection to the file and ensures that the file is free to use for other resources",
+        "None of these",
+        "Both (a) and (b)"
+      ],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Where is the Raspbian image found?",
+      options: [
+        "It is not available on the Internet",
+        "It is available as image file from the Raspberry Pi official website",
+        "It can only be purchased from offline vendor",
+        "None of these"
+      ],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    
+    
+
   {
     question: "Which of the following is/are current challenges in IoT?",
     options: [
@@ -408,6 +641,156 @@ const data = [
     topic: "Arduino",
     week: 5
   }
-
+  ,
+    {
+      question: "Python is popular for embedded application development as it is a very lightweight programming language.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Adafruit provides a library to work with DHT22 Sensor.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Consider the following piece of Python code. What is the output?",
+      image: "images/ass6que3.png",
+      options: ["5", "12", "Code", "&Code"],
+      answer: 2,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "To indicate different blocks of code, Python follows rigid indentation.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "What is the output of the following line of code in Python?",
+      image:"images/ass6que5.png",
+      options: [
+        "Hi, Welcome to python!",
+        "“Hi, Welcome to python!”",
+        "Hi, Welcome to python",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "During remote server access by a Raspberry Pi, where the Raspberry Pi acts as a client, the client needs the following?",
+      options: [
+        "Only IP address of server",
+        "Only port number",
+        "Both server IP address and port number",
+        "Client’s IP address"
+      ],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "State whether the following command to install the PIL library is correct or not.",
+      image:"images/ass6que7.png",
+      options: ["Correct", "Incorrect"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "What is the purpose of the 'w' mode in the open() function in Python?",
+      options: [
+        "To read a file",
+        "To write data to a file, overwriting existing content",
+        "To append data to a file",
+        "To open a file in read and write mode"
+      ],
+      answer: 1,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "What will be the output of the given Python program when reading from the file?",
+      image:"images/ass6que9.png",
+      options: [
+        "Writing data",
+        "Reading from the file\nWriting data",
+        "Error: File not found",
+        "None of the above"
+      ],
+      answer: 1,
+      topic: "Python",
+      week: 6
+    },
+    {
+      question: "Can we configure Raspberry Pi as a File Server?",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Which command is used to configure the Raspberry Pi for the camera module?",
+      options: [
+        "sudo camera-config",
+        "sudo raspi-config",
+        "sudo enable-camera",
+        "sudo pi-setup"
+      ],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "What is the final step after enabling the camera in the Raspberry Pi configuration?",
+      options: [
+        "Restart the camera service",
+        "Run a camera test command",
+        "Reboot the Raspberry Pi",
+        "Reinstall the Raspberry Pi OS"
+      ],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "Which command exits the nano editor?",
+      options: ["Ctrl + X", "Ctrl + O", "Ctrl + K", "None of these"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "In a temperature-controlled fan system using a relay, when should the fan turn on?",
+      options: [
+        "When the relay is manually triggered",
+        "When the surrounding temperature is lower than a predefined threshold",
+        "When the surrounding temperature exceeds a predefined threshold",
+        "When the battery voltage drops below a certain level"
+      ],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 6
+    },
+    {
+      question: "What does the following line of code do?\n\nraspistillcapture -o image.jpg",
+      image:"images/ass6que15.png",
+      options: [
+        "Captures video feed",
+        "Captures still image",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 3,
+      topic: "RaspberryPi",
+      week: 6
+    }  
 
 ]
