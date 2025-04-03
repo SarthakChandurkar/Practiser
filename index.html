@@ -206,7 +206,7 @@
     }
 
     // When DOM is ready, load topics and setup event listeners.
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', async function() {
       // Load topics from topics.txt
       fetch('topics.txt')
         .then(response => response.text())

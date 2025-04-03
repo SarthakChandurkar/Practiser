@@ -1,5 +1,377 @@
 const data = [
     {
+      question: "Raspberry Pi is like a mini computer which can perform a wide range of general purpose tasks.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "What is the complete form of GPIO pins on Raspberry Pi devices?",
+      options: [
+        "General Public Input/Output",
+        "Generative Purpose Input/Output",
+        "General Purpose Input/Output",
+        "Global Purpose Input/Output"
+      ],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "The Python program which you execute on Raspberry Pi to read data from sensors and control actuators has the same syntax and style as any other Python program.",
+      options: ["False", "True"],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "During remote server access by a Raspberry Pi, where the Raspberry Pi acts as a client, the client needs the following?",
+      options: [
+        "Only IP address of server",
+        "Only port number",
+        "Both server IP address and port number",
+        "Client’s IP address"
+      ],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "Which among the following are valid data processing activities?",
+      options: ["Data Splitting", "Data filtering", "Data plotting", "All of the given"],
+      answer: 3,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "Consider the following Python code snippet. Assume the syntax is correct and all required libraries are imported. What will be the output (See every detail, including the apostrophes carefully)?",
+      image: "images/ass7que62023.png",
+      options: [
+        "['Sensor','Actuator','Arduino']",
+        "['Sensor@Actuator','Arduino']",
+        "['Sensor','Actuator%Arduino']",
+        "['Sensor@Actuator%Arduino']"
+      ],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "Which among the following functions do you use while using MATPLOTLIB to add a title to a plot?",
+      options: ["plot()", "add()", "label()", "title()"],
+      answer: 3,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "In traditional non-software-defined networks consisting of a network of switches, suppose OSPF is being used as the routing protocol. Which among the following is true?",
+      options: [
+        "All the switches execute OSPF distributively",
+        "Only one switch executes OSPF",
+        "No switch executes OSPF",
+        "All of these are true"
+      ],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "In SDN, the Operating System (OS) is separated (i.e., not strongly coupled) from the physical hardware for each switch.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Which among the following is a popular protocol implementing SDN?",
+      options: ["OpenSwitch", "OpenStack", "OpenFlow", "OpenEdge"],
+      answer: 2,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "With respect to Software Defined Networking (SDN), which among the following is true?",
+      options: [
+        "SDN couples the data plane and control plane.",
+        "SDN has no relation to either data plane or control plane.",
+        "SDN separates the data plane and control plane.",
+        "None of the stated."
+      ],
+      answer: 2,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Consider the following figure below. To which issue of SDN does this particular figure relate?",
+      image: "images/ass7que12.png",
+      options: [
+        "Controller placement issue",
+        "Flow Rule placement issue",
+        "Hardware placement issue",
+        "Analysis placement issue"
+      ],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Suppose that there are two LANs, each configured to be SDN enabled with their own set of switches and controllers. Which among the following directional APIs will be used for communication between the two controllers?",
+      options: ["Northbound API", "East-Westbound API", "Southbound API", "Northeastbound API"],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Which among the following is true?",
+      options: [
+        "Backup Controllers have no use in SDN",
+        "There is no difference between the main controller and backup controller",
+        "Backup controllers take over when the main controller goes down",
+        "It is not a good idea to keep backup controllers."
+      ],
+      answer: 2,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "IoT being data-intensive and having a lot of security concerns, it is a good idea to integrate SDN with IoT to mitigate many of these issues.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    }  
+  ,
+    {
+      question: "DHTSensor refers to Digital Humidity and Temperature Sensor.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "Fill in the blanks. __________ is a python library used for plotting the data in 2D.",
+      options: ["List", "Numpy", "Pandas", "Matplotlib"],
+      answer: 3,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "Fill in the blanks. __________ makes a scatter plot of the given points.",
+      options: ["ion()", "figure()", "Scatter()", "None of these"],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "What are the two main challenges of SDN?",
+      options: [
+        "File placement and Node placement",
+        "Rule placement and Controller placement",
+        "All of these",
+        "None of these"
+      ],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "In soft-timeout, all the rules are deleted from the switch.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Which of the following is a component of SDN?",
+      options: ["Hardware switches", "Flow-rules", "None of these", "All of these"],
+      answer: 3,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "What is introduced if a controller is down in SDN?",
+      options: ["Backup controller", "Intro controller", "All of these", "None of these"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Southbound API is used to communicate between control layer and application layer.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "SDN is OpenFlow.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Which of the following forwards the sensed data based on the ID of the source node?",
+      options: [
+        "Value-centric data forwarding",
+        "ID-centric data forwarding",
+        "All of these",
+        "None of these"
+      ],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Does integrating SDN in IoT provide intelligent routing decisions?",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Are Indigo and LINC Open source?",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Which of the following is used to communicate among multiple controllers in the control layer?",
+      options: ["East-Westbound APIs", "Northbound APIs", "All of these", "None of these"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "How many requests can a controller handle through a single thread?",
+      options: ["200/sec", "50/sec", "None of these", "All of these"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Size of the ternary content-addressable memory is not limited at the switches.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    }  
+  ,
+    {
+      question: "In Python socket programming, while defining a socket, SOCK_STREAM refers to a type of",
+      options: ["SocketFamily", "SocketType", "SocketName", "SocketProtocol"],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "If you want to change the label of the Y-axis while plotting a graph using matplotlib in Python, what among the following functions do you use? Suppose you have imported matplotlib as plt.",
+      options: ["plt.show()", "plt.plot()", "plt.ylabel()", "plt.yaxis()"],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "In Socket programming, the parameter AF_INET stands for ___________.",
+      options: ["Unix protocols", "Internet Protocol (IP)", "File sharing", "Time slicing"],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "Suppose a Python server is receiving data from a socket as follows, What kind of socket ‘sock’ is being considered here?",
+      image: "images/ass7que4.png",
+      options: ["TCP socket", "UDP socket", "TAP socket", "None of the given"],
+      answer: 1,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "What is the use of the Mobi-Flow protocol?",
+      options: ["Enabling static SDN", "Enabling SDN to incorporate mobility", "Enabling Odin Master", "Enabling traditional BGP"],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "During remote server access using socket programming what is the utility of the .<socket_name>.listen() function?",
+      options: ["To create a new socket", "To bind the socket to connection", "To wait for clients to connect", "To close the connection"],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "Which among the following is the correct direction for PACKET_OUT type messages in SDN?",
+      options: ["From controller to switch", "From switch to controller", "Between two switches", "Between two controllers"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Which among the following is a limitation of the traditional non-SDN networks?",
+      options: ["Switches do not possess routing table", "Switches are unable to forward traffic", "Switches do not have a global view of the network.", "All of the given"],
+      answer: 2,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "During remote server access by a Raspberry Pi, where the Raspberry Pi acts as a client, the client needs the following?",
+      options: ["Only IP address of server", "Only port number", "Both server IP address and port number", "Client’s IP address"],
+      answer: 2,
+      topic: "RaspberryPi",
+      week: 7
+    },
+    {
+      question: "With respect to the concept of soft time-out and hard time-out in SDN switches, which of the following relations hold?",
+      options: ["Soft time-out >= hard time-out", "Hard time-out >= soft time-out", "Soft time-out = hard time-out always", "None of the given"],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Which of the following is true?",
+      options: [
+        "Traditional Network: Routing Table, Software Defined Network: Routing Table",
+        "Traditional Network: Flow Table, Software Defined Network: Routing Table",
+        "Traditional Network: Routing Table, Software Defined Network: Flow Table",
+        "Traditional Network: Flow Table, Software Defined Network: Flow Table"
+      ],
+      answer: 2,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Consider the following figure below. To which issue of SDN does this particular figure relate?",
+      image: "images/ass7que12.png",
+      options: ["Controller placement issue", "Flow Rule placement issue", "Hardware placement issue", "Analysis placement issue"],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "With respect to the directional APIs in SDN, what is the functionality of East-Westbound APIs?",
+      options: ["To communicate between the controller and switches", "To communicate among multiple controllers", "East-Westbound APIs do not exist", "To communicate between switches themselves."],
+      answer: 1,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Hierarchical SDN architecture is also known as __________ architecture.",
+      options: ["Tree", "Flat", "Mesh", "Line"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    },
+    {
+      question: "Integrating SDN with IoT is not recommended and is not a suitable approach to follow.",
+      options: ["False", "True"],
+      answer: 0,
+      topic: "SDN",
+      week: 7
+    }  
+  ,
+    {
       question: "Python doesn’t support strict rules for syntax and static variable declaration like C.",
       options: ["True", "False"],
       answer: 0,
