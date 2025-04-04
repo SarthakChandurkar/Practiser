@@ -1,3 +1,7 @@
+Basics of IoT
+Sensors and Actuators
+Basics of IoT networking
+Connectivity technologies
 Interoperability
 Arduino
 Python
