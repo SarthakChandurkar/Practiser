@@ -1,4 +1,328 @@
 const data = [
+    // ************************************** Week 9 ****************************************************
+    {
+      question: "Which component of OpenStack do you use to access all the other components?",
+      options: ["Horizon", "Glance", "Neutron", "None of these"],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which among the following is NOT a component of OpenStack?",
+      options: ["Horizon", "Heat", "Plasma", "Neutron"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Sensor cloud is simply dumping and organizing of sensor data on cloud computing platforms.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which among the following are limitations of traditional Wireless Sensor Networks (WSNs)?",
+      options: ["Procurement Issues", "Deployment Issues", "Maintenance Issues", "All of the given"],
+      answer: 3,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "In a typical sensor cloud architecture, the sensor cloud infrastructure that provides the virtualization lies ______________________________",
+      options: ["At the same layer as physical sensor devices", "At the application layer", "In between the physical sensor layer and the application layer", "Sensor cloud does not support virtualization"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Generally speaking, Sensor Cloud Service Providers (SCSPs) are also always the owners of the physical sensors",
+      options: ["Yes", "No"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "In a typical sensor cloud architecture with virtualization, one virtual sensor can be associated with how many physical sensors?",
+      options: ["Only one", "One or more than one", "None", "Only two"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Sensor virtualization aims to achieve more _________________________ in providing sensor based services",
+      options: ["Complexity", "Flexibility"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Suppose that you want to start a business to provide some IoT based application, but you do not have the means to develop the application layer logic, neither you have the means to purchase and deploy physical sensors. You can however, rent cloud servers for use and write interface logic for interfacing with other modules. Which among the following actors will be the most suitable for you?",
+      options: ["Physical sensor owner", "Application layer developer", "Sensor Cloud Service Provider (SCSP)", "You cannot start the business"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which among the following is implemented along with sensor cloud to make its services and performance better?",
+      options: ["Cashing", "Caching", "Casing", "Calling"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which among the following cases is most likely to reduce the overall price of sensor-cloud implementation provided that the data traverses through multiple sensor hops starting from the origin sensor to the sink node, and provided that all owners are honest and charge for only what is required?",
+      options: ["If physical sensors are owned by multiple owners with high profit margin", "If all physical sensors are owned by a single owner with uniform profit margin"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Fog computing is aimed to replace cloud computing completely and has no scope for integration with cloud",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Suppose data from an IoT device first goes to Fog layer for some basic processing, after which it goes to Cloud layer for advanced processing, then the processed data comes back to the Fog layer and then, it finally comes back to the origin sensor node. In the return journey no processing of data takes place anywhere, just transfer of data takes place. If ‘Tf’ is the time taken by the data to travel from sensor to fog and vice versa, and ‘Tc’ is the time taken by the data to travel from fog to cloud and vice versa, ‘Tfp’ is the data processing time at fog and ‘Tcp’ is the data processing time at cloud, what is the total round trip time ‘T’ taken by data starting from the origin sensor node, processing the data and then back to the sensor node after being processed.",
+      options: ["T = Tf + Tc + Tfp + Tcp", "T = Tf + Tc", "T = 2(Tf + Tc) + Tfp + Tcp", "T = 4(Tf + Tc + Tfp + Tcp)"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Consider the standard Fog computing architecture. In which of the following layer will ‘very time sensitive data’ be processed?",
+      options: ["Nearest fog node", "Distant aggregate fog node", "Cloud", "Does not matter"],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "“Network, Accelerator, Compute and Storage” constitute the part of which view of fog computing architecture, as defined by OpenFog Consortium Architecture Working Group?",
+      options: ["System View", "Node View", "Software View", "None of these"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    }  
+  ,
+    {
+      question: "Which of the following is not a component of OpenStack?",
+      options: ["Suse", "Nova", "Swift", "All of these"],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Where is the sensed data sent for further processing in WSNs?",
+      options: ["Client node", "Central node", "Collect node", "Sink node"],
+      answer: 3,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Select the statement(s) that denote the advantages of cloud computing. Statement I: Elasticity Statement II: Pay-per-use Statement III: Self Service",
+      options: ["Statement I", "Statement II", "Statements I, II, and III", "None of these"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which of the following is a limitation of WSN?",
+      options: ["Price", "Post deployment maintenance", "Battery lifetime", "All of these"],
+      answer: 3,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "The managerial role is played by __________ in sensor-cloud architecture.",
+      options: ["End-users", "Sensor-Cloud Service Provider", "None of these", "All of these"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "The optimal composition of __________ is a management issue in sensor-cloud.",
+      options: ["Logistics", "Pricing", "Caching", "Virtual sensor nodes"],
+      answer: 3,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Who coined the term Fog computing?",
+      options: ["IBM", "CISCO", "All of these", "None of these"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "What are the issues related to the current cloud model?",
+      options: ["Volume", "Latency", "All of these", "None of these"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Sensor data is processed in the cloud before it is sent to the fog.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "What is the type of received data according to which Fog nodes work?",
+      options: ["Non-time sensitive data", "Very time-sensitive data", "Less time-sensitive data", "All of these"],
+      answer: 3,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which of the following are the advantages of Fog?",
+      options: ["Quick decision making", "Nodes can be mobile", "Reduces the risk of latency", "All of these"],
+      answer: 3,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which of the following requires the analysis at the nearest node?",
+      options: ["Non-time sensitive data", "Most time-sensitive data", "Less time-sensitive data", "None of these"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Fog nodes cannot connect and leave the network when necessary.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which of the following is used by the fog applications to increase the speed of service accessibility?",
+      options: ["Low power", "Good network connection", "Accelerators", "Analytics"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Fill in the blank. The concept of ________ enables physical hardware to be shared among multiple entities.",
+      options: ["Hardware virtualization", "Software virtualization", "Module virtualization", "All of these"],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    }  
+  ,
+    {
+      question: "Which of the following is/are the advantages of cloud computing?",
+      options: ["Elasticity", "Pay-per-use", "Self Service", "All of the above"],
+      answer: 3,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Fill in the blanks. Fog computing is an intermediate layer between __________ and _________.",
+      options: ["Dew and devices", "Cloud and devices", "Cloud and server", "None of these"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "The managerial role is played by __________ in sensor-cloud architecture.",
+      options: ["End-users", "Sensor-Cloud Service Provider", "Neither a nor b", "Both a and b"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which of the following is not a component of OpenStack?",
+      options: ["Suse", "Nova", "Swift", "All of these"],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Who coined the term Fog computing?",
+      options: ["IBM", "CISCO", "All of these", "None of these"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Fill in the blank. The concept of ________ enables physical hardware to be shared among multiple entities.",
+      options: ["Hardware virtualization", "Software virtualization", "Module virtualization", "All of these"],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Openstack is a free open source software for cloud framework simulation and experimentation with various cloud applications.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "In IoT, temporal sensitivity of data DOES NOT play an important role",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which among the following is NOT a component of OpenStack.",
+      options: ["Horizon", "Heat", "Stellar", "Neutron"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which among the following is the principal feature of sensor clouds, with respect to sensor nodes?",
+      options: ["Sensor monitoring", "Sensor instantiation", "Sensor virtualization", "Sensor collection"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "The optimal composition of __________ is a management issue in sensor-cloud.",
+      options: ["Logistics", "Pricing", "Caching", "Virtual sensor nodes"],
+      answer: 3,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "How many different types of caching mechanism are there in sensor cloud?",
+      options: ["1", "4", "2", "3"],
+      answer: 2,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Data from an IoT device is transferred to cloud via a network, which is then processed at the cloud and then a response is sent back to the IoT device from the cloud after processing. The time it takes for one-way data transfer between the node and cloud is 10s and the data processing time at the cloud is ‘x’ seconds. It takes a total of 25s for the entire to and fro transfer of data between the sensor and cloud along with processing at the cloud. What is the value of x?",
+      options: ["10s", "5s", "15s", "20s"],
+      answer: 1,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which among the following is true?",
+      options: [
+        "Fog computing acts as a complement to cloud computing.",
+        "Fog computing is a replacement for cloud computing.",
+        "Fog computing and cloud computing are the same.",
+        "Fog computing is more powerful than cloud computing (with respect to resources)."
+      ],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    },
+    {
+      question: "Which component of OpenStack do you use to access all the other components?",
+      options: ["Horizon", "Glance", "Neutron", "None of these"],
+      answer: 0,
+      topic: "Cloud",
+      week: 9
+    }
+  ,  
   // ********************************** Week 2 *******************************************************
     {
       question: "The full form of MQTT is",
