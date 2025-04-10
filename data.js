@@ -1,4 +1,323 @@
 const data = [
+  //********************************************************* Week 3 *********************************************
+    {
+      question: "State whether the following statement is true or false. Statement: Wired HART lacks a network layer.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "The HART physical layer is derived from ____________ protocol and operates only in ________ GHz ISM band.",
+      options: ["IEEE 802.15.4, 2.4", "IEEE 802.15.4, 4.8", "IEEE 802.16.5, 4.8", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State whether the following statement is True or False. Statement: Super-frames in HART consist of grouped 20ms wide timeslots.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "_________________ identifies channels consistently affected by interference and removes them from use.",
+      options: ["Channel hopping", "Channel aggregating", "Channel blacklisting", "Frequency aggregating"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "The _________________ supervises each node in the network and guides them on when and where to send packets.",
+      options: ["Application manager", "Network manager", "Trust manager", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "NFC is designed for use by devices within _________ to each other?",
+      options: ["Close proximity", "No near contact", "Both (a) and (b)", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "______________ contain information which is readable by other devices, however it cannot read information itself.",
+      options: ["Active NFC devices", "Dumb NFC devices", "Passive NFC devices", "None of these"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "NFC devices work on the principle of ___________________?",
+      options: ["Magnetic introduction", "Magnetic induction", "Both (a) and (b)", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which of these is NOT a mode of operation NFC?",
+      options: ["Server-to-Server", "Peer-to-Peer", "Read/Write", "Card emulation"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State whether the following statement is true or false. Statement: Paging in Bluetooth is the process of forming a connection between two Bluetooth devices.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "There are ______ modes of operation in Bluetooth.",
+      options: ["3", "4", "5", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Zwave uses __________ for signaling and control?",
+      options: ["Light", "RF", "Sound", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which of the following is/are not a constraint on sensor nodes?",
+      options: ["Must consume high power", "Not be adaptive to the environment", "Both (a) and (b)", "None of these"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "___________ are simply those that are unable to perform an operation; this could be because of power failure and environmental events.",
+      options: ["Normal nodes", "Failed nodes", "Badly failed nodes", "None of these"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "Dumb behavior of sensor nodes is _______________ in nature (as it is dependent on the effects of the environmental conditions).",
+      options: ["Temporal", "Spatial", "Both (a) and (b)", "None of these"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 3
+    }  
+  ,
+    {
+      question: "State whether the following statement is true or false. Statement: There is no network layer in Wired HART",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "HART operates only in __________ GHz ISM band.",
+      options: ["2.4", "4.8", "4.9", "4.4"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Super-frames in HART consist of grouped ___________ wide timeslots.",
+      options: ["10ms", "20ms", "55ms", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "The process of identifying channels consistently affected by interference and removing them from use is known as _________________.",
+      options: ["Channel hopping", "Channel aggregating", "Frequency aggregating", "Channel blacklisting"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State whether the following statement is True or False. Statement: Each node is supervised by the application manager and it guides them on when and where to send packets.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "FeliCa is commonly found in which country?",
+      options: ["Japan", "India", "USA", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State whether the following state is true or false. Statement: NFC tags found in supermarket products are examples of passive NFC.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Active NFC devices are able to ___________________?",
+      options: ["transmit information", "collect information", "Both (a) and (b)", "None of these"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "A __________ in NFC emits a small electric current which creates a magnetic field that in turn bridges the physical space between the devices.",
+      options: ["reader", "writer", "destroyer", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Bluetooth technology is based on _________________.",
+      options: ["WiFi", "LoRa", "Ad-hoc technology", "None of these"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Bluetooth technology operates in the unlicensed industrial, scientific and medical (ISM) band at _________ to ________ GHz.",
+      options: ["3.2, 5.6", "2.4, 2.485", "5.0, 5.89", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Z-wave operates at ________ MHz in the US and ________ MHz in Europe.",
+      options: ["1008, 989", "908.42, 868.42", "767.56, 855.28", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State whether the following statement is true or false. Statement: Sensor nodes have limited battery life.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "State whether the following statement is true or false. Statement: The Link Manager Protocol in Bluetooth manages the establishment, authentication, link configuration.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Zigbee commonly uses __________data rate.",
+      options: ["250 kbps", "250 Mbps", "260 kbps", "260 Mbps"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    }  
+  ,
+    {
+      question: "State True or False. Statement: 'WirelessHART is the latest release of Highway Addressable Remote Transducer protocol.'",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State True or False. Statement: 'Wired HART has a network layer.'",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State True or False. 'WirelessHART physical layer is derived from 802.15.2 protocol.'",
+      options: ["False", "True"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "WirelessHART operates only in __________ GHz ISM band.",
+      options: ["3.7", "4.8", "4.8", "2.4"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "HART standard was developed from _____________ smart field devices.",
+      options: ["amplified", "diminished", "isolated", "networked"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Main difference between wired and unwired versions of HART is in the physical, data link, and ______ layers.",
+      options: ["Data link", "Network", "Transport", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State true or false 'Collision free and deterministic communication is achieved in HART’s data link layer.'",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Channel hopping is incorporated in which layer of HART?",
+      options: ["Data link layer", "Physical layer", "Application layer", "Transport layer"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State True or False. 'The HART application layer is responsible for extracting commands from a message, executing it and generating responses.'",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "NFC is designed for use by devices within ________________ to each other.",
+      options: ["Anywhere on the globe", "A small building", "Both (a) and (b)", "None of these"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Passive NFC devices ___________ information which is _____________ by other devices.",
+      options: ["contain, read", "read, contain", "contain, contain", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State True or False. 'NFC devices work on the principle of magnetic induction.'",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Bluetooth technology is based on _________________.",
+      options: ["HART", "ZigBee", "All of these", "None of these"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "State whether the following statement is true or false. Statement: 'The Link Manager Protocol in Bluetooth manages the only establishment and authentication.'",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Zigbee commonly uses __________data rate.",
+      options: ["260 bps", "260 kbps", "260 Mbps", "None of these"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 3
+    }  
+  ,
     // ************************************** Week 9 ****************************************************
     {
       question: "Which component of OpenStack do you use to access all the other components?",
@@ -333,7 +652,7 @@ const data = [
         "None of these"
       ],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -345,7 +664,7 @@ const data = [
         "All of these"
       ],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -357,7 +676,7 @@ const data = [
         "None of these"
       ],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -369,7 +688,7 @@ const data = [
         "None of these"
       ],
       answer: 2,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -381,7 +700,7 @@ const data = [
         "Neither (a) nor (b)"
       ],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -393,7 +712,7 @@ const data = [
         "Messaging and Request/response"
       ],
       answer: 3,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -405,7 +724,7 @@ const data = [
         "CoAP"
       ],
       answer: 2,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -417,7 +736,7 @@ const data = [
         "Neither (a) nor (b)"
       ],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -429,7 +748,7 @@ const data = [
         "Both (a) and (b)"
       ],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -441,7 +760,7 @@ const data = [
         "None of these"
       ],
       answer: 3,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -453,7 +772,7 @@ const data = [
         "All of these"
       ],
       answer: 3,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -465,7 +784,7 @@ const data = [
         "Topic"
       ],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -510,49 +829,49 @@ const data = [
         "None of these"
       ],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "In MQTT, a ________________ controls the publish-subscribe messaging pattern.",
       options: ["Message Broker", "Publishers", "Subscribers", "All of these"],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "Which of the following is NOT a Data Protocol in IoT?",
       options: ["MQTT", "CoAP", "Websocket", "None of these"],
       answer: 3,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "In MQTT for IoT, the Publishers are ______________.",
       options: ["Lightweight sensors", "Actuators", "Processing units", "None of these"],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "Which of the following is NOT a method in MQTT?",
       options: ["Break", "Connect", "Disconnect", "None of these"],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "Which of the following protocols in IoT have been designed for Machine to Machine (M2M) applications such as smart energy and building automation?",
       options: ["MQTT", "CoAP", "Websocket", "All of these"],
       answer: 1,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "Similar to HTTP, CoAP utilizes which of the following for operation?",
       options: ["GET", "PUT", "PUSH", "All of these"],
       answer: 3,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -564,14 +883,14 @@ const data = [
         "Neither (a) nor (b)"
       ],
       answer: 1,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "State whether the following statement is True or False.\n\nStatement: XMPP is an open standard protocol.",
       options: ["True", "False"],
       answer: 0,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -583,21 +902,21 @@ const data = [
         "None of these"
       ],
       answer: 2,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "What is the basic unit of data in the AMQP protocol?",
       options: ["Chunk", "Byte", "Frame", "None of these"],
       answer: 2,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "Which of the following is/are exchange types in AMQP?",
       options: ["Direct", "Fan-out", "Topic", "All of these"],
       answer: 3,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -611,7 +930,7 @@ const data = [
       question: "The OSI model has __________ layers.",
       options: ["6", "7", "4", "8"],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "Basics of IoT",
       week: 2
     },
     {
@@ -623,7 +942,7 @@ const data = [
         "None of these"
       ],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     }  
   ,
@@ -631,77 +950,77 @@ const data = [
       question: "Based on functionality, MQTT is a _______ protocol.",
       options: ["Transport", "Data", "Semantic", "None of these"],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "MQTT is designed for -",
       options: ["Remote connections", "Limited bandwidth", "Both (a) and (b)", "Neither (a) nor (b)"],
       answer: 2,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "MQTT protocol follows _____________ paradigm for exchanging messages.",
       options: ["Client-Server", "Publish-Subscribe", "Both (a) and (b)", "None of these"],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "State True or False.\n\nStatement: “In MQTT, the Subscribers are Lightweight Sensors.”",
       options: ["True", "False"],
       answer: 1,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "Which of the following is an MQTT component?",
       options: ["Middleman", "Mules", "Both (a) and (b)", "None of these"],
       answer: 3,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "State True or False.\n\nA topic in MQTT can only be numbers.",
       options: ["False", "True"],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "State True or False.\n\nThere are only two methods specified by the MQTT protocol.",
       options: ["False", "True"],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "The Publish/Subscribe architecture in MQTT is __________ driven.",
       options: ["Event", "Pulse", "Sound", "None of these"],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "State True or False.\n\nThe topic is the routing information for the broker.",
       options: ["True", "False"],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "CoAP is _____________ and ____________.",
       options: ["Based on HTTP", "Is designed for M2M applications", "None of these", "Both (a) and (b)"],
       answer: 3,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "In CoAP, client-server interaction is asynchronous over a datagram transport protocol such as ____________.",
       options: ["UDP", "TCP", "IP", "XMP"],
       answer: 0,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
@@ -713,21 +1032,21 @@ const data = [
         "None of these"
       ],
       answer: 2,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "AMQP has _______ number of frame types.",
       options: ["6", "3", "5", "9"],
       answer: 3,
-      topic: "Connectivity technologies",
+      topic: "MQTT CoAP XMPP AMQP",
       week: 2
     },
     {
       question: "State True or False.\n\nStatement: “The OSI model has 7 layers.”",
       options: ["True", "False"],
       answer: 0,
-      topic: "Basics of IoT networking",
+      topic: "Basics of IoT",
       week: 2
     },
     {
@@ -739,343 +1058,343 @@ const data = [
         "Neither (a) nor (b)"
       ],
       answer: 3,
-      topic: "Basics of IoT networking",
+      topic: "Basics of IoT",
       week: 2
     }
   ,  
   // ****************************** Week 1 ************************************************
-    {
-      question: "Which of the following are the enablers of IoT?",
-      options: ["RFID", "Nanotechnology", "Sensors", "All of the these"],
-      answer: 3,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "Which of the following is/are NOT a characteristic of IoT?",
-      options: [
-        "Efficient, scalable and associated architecture.",
-        "Ambiguous naming and addressing.",
-        "Abundance of sleeping nodes, mobile and non-IP devices.",
-        "None of these"
-      ],
-      answer: 1,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "State whether the following statement is True or False.\n\nStatement: The increasing number of devices in IoT is expected to result in an address crunch.",
-      options: ["True", "False"],
-      answer: 0,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "State whether the following statement is True or False.\n\nStatement: The gateway has a unique network prefix, which can be used to identify them globally.",
-      options: ["True", "False"],
-      answer: 0,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "Sometimes, when there is a need for the nodes to communicate directly to the Internet, ________________ can be used.",
-      options: ["Sensors", "Actuators", "Tunneling", "None of these"],
-      answer: 2,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "In _______________ a node/network is connected to multiple networks for improved reliability.",
-      options: ["Transparent roaming", "Multi-homing", "None of these", "Both (a) and (b)"],
-      answer: 1,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "The IPv6 notation uses ___________________ values.",
-      options: ["Roman", "Hexadecimal", "Both (a) and (b)", "None of these"],
-      answer: 1,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "A _____________ detects (senses) changes in the ambient conditions or in the state of another device or a system, and forwards or processes this information in a certain manner.",
-      options: ["Sensor", "Actuator", "Both (a) and (b)", "None of these"],
-      answer: 0,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "A microphone is an example of an _____________.",
-      options: ["Input device and actuator", "Only actuator", "Only Transducer", "Input device and transducer"],
-      answer: 3,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "The ________________ of a sensor is the smallest change it can detect in the quantity that it is measuring.",
-      options: ["Resolution", "Bias", "Noise", "None of these"],
-      answer: 0,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "Based on the data type, sensors are classified as _______________________.",
-      options: ["Scalar and Vector/Multimedia", "Only scalar", "Both (a) and (b)", "Only vector"],
-      answer: 0,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "Solenoid valve is an example of ______________________.",
-      options: ["Sensor", "Actuator", "Processing unit", "None of these"],
-      answer: 1,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "An actuator requires a ______________________ and ______________________.",
-      options: ["Control signal and a bias signal", "Control signal and a source of energy", "Noise signal and a source of energy", "None of these"],
-      answer: 1,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "State whether the following statement is True or False.\n\nStatement: Pneumatic rack and pinion actuators are used for valve controls of water pipes.",
-      options: ["True", "False"],
-      answer: 0,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "Which of the following is NOT a function of an IoT gateway?",
-      options: ["Switching", "Routing", "Protocol conversion", "Generating noise"],
-      answer: 3,
-      topic: "Basics of IoT networking",
-      week: 1
-    }  
-  ,
-    {
-      question: "What is the full form of IoT?",
-      options: ["Internet of Tasks", "Internet of Things", "Internet of Tasks", "None of these"],
-      answer: 1,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "Which of the following technologies have unified and has resulted in the evolution of IoT?",
-      options: ["Low-power embedded systems", "Cloud Computing", "Machine Learning", "All of these"],
-      answer: 3,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "Which of the following are the enablers of IoT?",
-      options: ["RFID", "Nanotechnology", "Sensors", "All of these"],
-      answer: 3,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "Which of the following is/are a function of an IoT Gateway?",
-      options: ["Connects the IoT LAN to a WAN", "Can implement several LAN and WAN", "Forwards packets between LAN and WAN on the IP layer", "All of these"],
-      answer: 3,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "State whether the following statement is True or False. Statement: “The same address of an IoT device may be repeated in the domain of another gateway. The gateway has a unique network prefix, which can be used to identify them globally.”",
-      options: ["True", "False"],
-      answer: 0,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "In _______________ a node/network is connected to multiple networks for improved reliability.",
-      options: ["Transparent roaming", "Multi-homing", "None of these", "Both (a) and (b)"],
-      answer: 1,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "The IPv4 notation uses ___________________ number of bits to represent an address.",
-      options: ["33", "32", "Both (a) and (b)", "None of these"],
-      answer: 1,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "The “Source Address” field in the IPv6 header is of __________ bits in length.",
-      options: ["32", "64", "128", "None of these"],
-      answer: 2,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "A device which detects or measures a physical property and records, indicates, or otherwise responds to it is called _________________?",
-      options: ["A sensor", "An actuator", "A Transducer", "A processor"],
-      answer: 0,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "A microphone is an example of an _____________.",
-      options: ["Input device and actuator", "Only actuator", "Only Transducer", "Input device and transducer"],
-      answer: 3,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "State whether the following statement is True or False. Statement: A sensor is only sensitive to the measured property for which it has been made (e.g., A temperature sensor senses the ambient temperature of a room.)",
-      options: ["True", "False"],
-      answer: 0,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "Based on the data type, sensors are classified as _______________________",
-      options: ["Only scalar", "Only vector", "Scalar and Vector/Multimedia", "None of these"],
-      answer: 2,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "State whether the following statement is True or False. Statement: The more the resolution of a sensor, the less accurate its precision.",
-      options: ["True", "False"],
-      answer: 1,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "The sensitivity of a sensor under real conditions may differ from the value specified. This is called ____________________.",
-      options: ["Physical error", "Sensitivity error", "Rounding error", "None of these"],
-      answer: 1,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "A sensor node is made up of which of the following?",
-      options: ["Sensor/Sensing units", "A processing unit", "A power unit", "All of these"],
-      answer: 3,
-      topic: "Sensors and Actuators",
-      week: 1
-    }
-    ,  
-    {
-      question: "IoT stands for ____________.",
-      options: ["Internet of Tasks", "Internet of Tuples", "Internet of Things", "None of these"],
-      answer: 2,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "Which of the following technologies have unified and has resulted in the evolution of IoT?",
-      options: ["High-power embedded systems", "Super Computing", "Engine Technology", "None of these"],
-      answer: 3,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "Which of the following are the enables of IoT?",
-      options: ["RFID", "Nanotechnology", "Sensors", "All of these"],
-      answer: 3,
-      topic: "Basics of IoT",
-      week: 1
-    },
-    {
-      question: "Which of the following is NOT a function of an IoT LAN?",
-      options: ["Long range communication, global", "World wide connections", "Both (a) and (b)", "Neither (a) Nor (b)"],
-      answer: 2,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "State whether the following statement is True or False. Statement: The integration of existing devices, smart devices, and constrained nodes in a singular framework is one of the reasons for the address crunch in IoT.",
-      options: ["True", "False"],
-      answer: 0,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "State True or False. Statement: “In Multi-homing, a node/network is connected to a single network for improved reliability.",
-      options: ["True", "False"],
-      answer: 1,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "Which of the following is/are the approach/approaches for multi-homing?",
-      options: ["Proxy-based approach", "Gateway-based approach", "Both (a) and (b)", "None of these"],
-      answer: 2,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "IPv6 uses ____________ notation for its representation.",
-      options: ["Hexadecimal", "Binary", "Decimal", "None of these"],
-      answer: 0,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "State True or False. The parameters sensed by a sensor may be sent to the cloud for further processing.",
-      options: ["False", "True"],
-      answer: 1,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "The IPv6 notation uses ___________________ number of bits to represent an address.",
-      options: ["64", "128", "Both (a) and (b)", "Neither (a) nor (b)"],
-      answer: 1,
-      topic: "Basics of IoT networking",
-      week: 1
-    },
-    {
-      question: "A sensor is -",
-      options: [
-        "Only sensitive to the measured property",
-        "Insensitive to any other property that what the sensor is made to sense",
-        "Both (a) and (b)",
-        "None of these"
-      ],
-      answer: 2,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "We classify sensors based on -",
-      options: ["Output", "Data type", "Both (a) and (b)", "None of these"],
-      answer: 2,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "Which of the following is correct statement?",
-      options: [
-        "Controlling AC loads using low DC signals",
-        "Relays are electromechanical",
-        "Relays are actuators",
-        "All of these"
-      ],
-      answer: 3,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "Based on the output, sensors are classified as ____________________.",
-      options: ["Analog", "Digital", "Both (a) and (b)", "Neither (a) nor (b)"],
-      answer: 2,
-      topic: "Sensors and Actuators",
-      week: 1
-    },
-    {
-      question: "Soft actuators are -",
-      options: ["Polymer-based", "Mechanical", "Electromechanical", "None of these"],
-      answer: 0,
-      topic: "Sensors and Actuators",
-      week: 1
-    }  
+  {
+    question: "Which of the following are the enablers of IoT?",
+    options: ["RFID", "Nanotechnology", "Sensors", "All of the these"],
+    answer: 3,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Which of the following is/are NOT a characteristic of IoT?",
+    options: [
+      "Efficient, scalable and associated architecture.",
+      "Ambiguous naming and addressing.",
+      "Abundance of sleeping nodes, mobile and non-IP devices.",
+      "None of these"
+    ],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "State whether the following statement is True or False.\n\nStatement: The increasing number of devices in IoT is expected to result in an address crunch.",
+    options: ["True", "False"],
+    answer: 0,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "State whether the following statement is True or False.\n\nStatement: The gateway has a unique network prefix, which can be used to identify them globally.",
+    options: ["True", "False"],
+    answer: 0,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Sometimes, when there is a need for the nodes to communicate directly to the Internet, ________________ can be used.",
+    options: ["Sensors", "Actuators", "Tunneling", "None of these"],
+    answer: 2,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "In _______________ a node/network is connected to multiple networks for improved reliability.",
+    options: ["Transparent roaming", "Multi-homing", "None of these", "Both (a) and (b)"],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "The IPv6 notation uses ___________________ values.",
+    options: ["Roman", "Hexadecimal", "Both (a) and (b)", "None of these"],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "A _____________ detects (senses) changes in the ambient conditions or in the state of another device or a system, and forwards or processes this information in a certain manner.",
+    options: ["Sensor", "Actuator", "Both (a) and (b)", "None of these"],
+    answer: 0,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "A microphone is an example of an _____________.",
+    options: ["Input device and actuator", "Only actuator", "Only Transducer", "Input device and transducer"],
+    answer: 3,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "The ________________ of a sensor is the smallest change it can detect in the quantity that it is measuring.",
+    options: ["Resolution", "Bias", "Noise", "None of these"],
+    answer: 0,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "Based on the data type, sensors are classified as _______________________.",
+    options: ["Scalar and Vector/Multimedia", "Only scalar", "Both (a) and (b)", "Only vector"],
+    answer: 0,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "Solenoid valve is an example of ______________________.",
+    options: ["Sensor", "Actuator", "Processing unit", "None of these"],
+    answer: 1,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "An actuator requires a ______________________ and ______________________.",
+    options: ["Control signal and a bias signal", "Control signal and a source of energy", "Noise signal and a source of energy", "None of these"],
+    answer: 1,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "State whether the following statement is True or False.\n\nStatement: Pneumatic rack and pinion actuators are used for valve controls of water pipes.",
+    options: ["True", "False"],
+    answer: 0,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "Which of the following is NOT a function of an IoT gateway?",
+    options: ["Switching", "Routing", "Protocol conversion", "Generating noise"],
+    answer: 3,
+    topic: "Basics of IoT",
+    week: 1
+  }  
+,
+  {
+    question: "What is the full form of IoT?",
+    options: ["Internet of Tasks", "Internet of Things", "Internet of Tasks", "None of these"],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Which of the following technologies have unified and has resulted in the evolution of IoT?",
+    options: ["Low-power embedded systems", "Cloud Computing", "Machine Learning", "All of these"],
+    answer: 3,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Which of the following are the enablers of IoT?",
+    options: ["RFID", "Nanotechnology", "Sensors", "All of these"],
+    answer: 3,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Which of the following is/are a function of an IoT Gateway?",
+    options: ["Connects the IoT LAN to a WAN", "Can implement several LAN and WAN", "Forwards packets between LAN and WAN on the IP layer", "All of these"],
+    answer: 3,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "State whether the following statement is True or False. Statement: “The same address of an IoT device may be repeated in the domain of another gateway. The gateway has a unique network prefix, which can be used to identify them globally.”",
+    options: ["True", "False"],
+    answer: 0,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "In _______________ a node/network is connected to multiple networks for improved reliability.",
+    options: ["Transparent roaming", "Multi-homing", "None of these", "Both (a) and (b)"],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "The IPv4 notation uses ___________________ number of bits to represent an address.",
+    options: ["33", "32", "Both (a) and (b)", "None of these"],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "The “Source Address” field in the IPv6 header is of __________ bits in length.",
+    options: ["32", "64", "128", "None of these"],
+    answer: 2,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "A device which detects or measures a physical property and records, indicates, or otherwise responds to it is called _________________?",
+    options: ["A sensor", "An actuator", "A Transducer", "A processor"],
+    answer: 0,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "A microphone is an example of an _____________.",
+    options: ["Input device and actuator", "Only actuator", "Only Transducer", "Input device and transducer"],
+    answer: 3,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "State whether the following statement is True or False. Statement: A sensor is only sensitive to the measured property for which it has been made (e.g., A temperature sensor senses the ambient temperature of a room.)",
+    options: ["True", "False"],
+    answer: 0,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "Based on the data type, sensors are classified as _______________________",
+    options: ["Only scalar", "Only vector", "Scalar and Vector/Multimedia", "None of these"],
+    answer: 2,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "State whether the following statement is True or False. Statement: The more the resolution of a sensor, the less accurate its precision.",
+    options: ["True", "False"],
+    answer: 1,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "The sensitivity of a sensor under real conditions may differ from the value specified. This is called ____________________.",
+    options: ["Physical error", "Sensitivity error", "Rounding error", "None of these"],
+    answer: 1,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "A sensor node is made up of which of the following?",
+    options: ["Sensor/Sensing units", "A processing unit", "A power unit", "All of these"],
+    answer: 3,
+    topic: "Sensors and Actuators",
+    week: 1
+  }
+  ,  
+  {
+    question: "IoT stands for ____________.",
+    options: ["Internet of Tasks", "Internet of Tuples", "Internet of Things", "None of these"],
+    answer: 2,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Which of the following technologies have unified and has resulted in the evolution of IoT?",
+    options: ["High-power embedded systems", "Super Computing", "Engine Technology", "None of these"],
+    answer: 3,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Which of the following are the enables of IoT?",
+    options: ["RFID", "Nanotechnology", "Sensors", "All of these"],
+    answer: 3,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Which of the following is NOT a function of an IoT LAN?",
+    options: ["Long range communication, global", "World wide connections", "Both (a) and (b)", "Neither (a) Nor (b)"],
+    answer: 2,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "State whether the following statement is True or False. Statement: The integration of existing devices, smart devices, and constrained nodes in a singular framework is one of the reasons for the address crunch in IoT.",
+    options: ["True", "False"],
+    answer: 0,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "State True or False. Statement: “In Multi-homing, a node/network is connected to a single network for improved reliability.",
+    options: ["True", "False"],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "Which of the following is/are the approach/approaches for multi-homing?",
+    options: ["Proxy-based approach", "Gateway-based approach", "Both (a) and (b)", "None of these"],
+    answer: 2,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "IPv6 uses ____________ notation for its representation.",
+    options: ["Hexadecimal", "Binary", "Decimal", "None of these"],
+    answer: 0,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "State True or False. The parameters sensed by a sensor may be sent to the cloud for further processing.",
+    options: ["False", "True"],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "The IPv6 notation uses ___________________ number of bits to represent an address.",
+    options: ["64", "128", "Both (a) and (b)", "Neither (a) nor (b)"],
+    answer: 1,
+    topic: "Basics of IoT",
+    week: 1
+  },
+  {
+    question: "A sensor is -",
+    options: [
+      "Only sensitive to the measured property",
+      "Insensitive to any other property that what the sensor is made to sense",
+      "Both (a) and (b)",
+      "None of these"
+    ],
+    answer: 2,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "We classify sensors based on -",
+    options: ["Output", "Data type", "Both (a) and (b)", "None of these"],
+    answer: 2,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "Which of the following is correct statement?",
+    options: [
+      "Controlling AC loads using low DC signals",
+      "Relays are electromechanical",
+      "Relays are actuators",
+      "All of these"
+    ],
+    answer: 3,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "Based on the output, sensors are classified as ____________________.",
+    options: ["Analog", "Digital", "Both (a) and (b)", "Neither (a) nor (b)"],
+    answer: 2,
+    topic: "Sensors and Actuators",
+    week: 1
+  },
+  {
+    question: "Soft actuators are -",
+    options: ["Polymer-based", "Mechanical", "Electromechanical", "None of these"],
+    answer: 0,
+    topic: "Sensors and Actuators",
+    week: 1
+  }   
   ,
   // ****************************** Week 8 ************************************************
   {

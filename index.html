@@ -302,6 +302,7 @@
 
       // In Quiz mode, limit to 20 questions if possible.
       if (totalQuestions > 20) {
+        shuffleArray(filteredData); 
         filteredData = filteredData.slice(0, 20);
         totalQuestions = 20;
       }
