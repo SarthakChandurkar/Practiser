@@ -1,4 +1,707 @@
 const data = [
+    // ******************************** Week 12 ******************************************
+    {
+      question: "The two types of data analysis are _____________.",
+      options: [
+        "Qualitative and Quantitative",
+        "Repetitive and Quantitative",
+        "Repetitive and Qualitative",
+        "All of these"
+      ],
+      answer: 0,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Which of the following is a principle of Qualitative analysis?",
+      options: [
+        "Notice things",
+        "Think about things",
+        "Collect things",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Select the statement(s) that denote the type of ANOVA.",
+      options: [
+        "Statement I",
+        "Statement II",
+        "Statements I, II, and III",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "What is the type of the data dispersion?",
+      options: [
+        "Range",
+        "Average absolute deviation",
+        "Variance",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "The process by which numerical data is analyzed is known as __________.",
+      options: [
+        "Qualitative analysis",
+        "Quantitative analysis",
+        "None of these",
+        "All of these"
+      ],
+      answer: 1,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "The mathematical equation that is formulated in the form of relationships between variables is known as __________.",
+      options: [
+        "Logical model",
+        "Relational model",
+        "Data dispersion",
+        "Statistical model"
+      ],
+      answer: 3,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "What are the two types of statistical models?",
+      options: [
+        "Qualitative and quantitative",
+        "Complete and incomplete",
+        "Regression and dispersion",
+        "None of these"
+      ],
+      answer: 1,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Contingency table is also known as?",
+      options: [
+        "Cross tabulation",
+        "Cross table",
+        "All of these",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Advances in sensor and connectivity have disabled preventive care.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Which of the following is a feature of IoT Healthcare?",
+      options: [
+        "Non-invasive monitoring",
+        "Cloud-based analytics",
+        "Wireless transmission",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Which of the following are components of IoT?",
+      options: [
+        "Sensing layer",
+        "Aggregated layer",
+        "Processing layer",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Which of the following is the advantage of activity monitoring?",
+      options: [
+        "Hard integration",
+        "Long term monitoring",
+        "Expensive",
+        "None of these"
+      ],
+      answer: 1,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Deep learning based data analysis cannot be performed on videos",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Which of the following is true for in-place activity monitoring data analysis?",
+      options: [
+        "Low power",
+        "Good network connection required",
+        "On-device",
+        "Group-based analytics"
+      ],
+      answer: 2,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Fill in the blank. Processing the handheld activity device data with artificial intelligence can be used for ________.",
+      options: [
+        "Fall detection",
+        "Heart rate detection",
+        "Vehicle detection",
+        "All of these"
+      ],
+      answer: 0,
+      topic: "Case Study",
+      week: 12
+    }  
+  ,
+    {
+      question: "Which is true?",
+      options: [
+        "The statistical model is defined as the mathematical equation that are formulated in the form of relationships between variables.",
+        "A statistical model illustrates how a set of random variables is related to another set of random variables.",
+        "Both the above",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Statistical significance is:",
+      options: [
+        "The likelihood that the difference in conversion rates between a given variation and the baseline is not due to random chance.",
+        "Reflects the risk tolerance and confidence level.",
+        "Has two key variables",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Which privacy-aware scheme is used in Ambusens cloud framework",
+      options: [
+        "Hashing and reverse hashing of patient physiological data",
+        "Patient identity masking by hashing-based mechanism",
+        "Hashing and reverse hashing of physiological sensor ID",
+        "All of the above"
+      ],
+      answer: 1,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Statistical methods of activity recognition can work on:",
+      options: ["Videos", "Images", "Scalar sensor data", "All of these"],
+      answer: 2,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Network-based activity recognition is:",
+      options: ["Larger and processing intensive", "Low power consumption", "Dependent on network connection", "All of these"],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "IoT-based remote healthcare monitoring is typically most useful for",
+      options: ["people in urban areas", "People without easy access to healthcare", "both a and b", "none of the above"],
+      answer: 1,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "In-place activity recognition is:",
+      options: ["On the device", "Power intensive", "No network connection required", "All of these"],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Activity monitoring:",
+      options: [
+        "Provides better quality of life",
+        "Provides information accurately in a reliable manner",
+        "Provides continuous monitoring support.",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "The desirable characteristics of an IoT sensor node are",
+      options: ["Energy-efficiency", "Distributed sensing", "Low-cost", "All of the above"],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Which of the following can be the reasons for packet drop in IoT network?",
+      options: ["Dense foliage", "High temperature", "Rain", "All of the above"],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Wearables can be used for:",
+      options: ["Child‐ care", "Elderly‐ care", "Entertainment", "All of these"],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "The types of ANOVA are:",
+      options: ["2", "3", "4", "5"],
+      answer: 1,
+      topic: "Data Analytics",
+      week: 12
+    },
+    {
+      question: "Long term trend tracking and preventive care in IoT healthcare is possible due to",
+      options: [
+        "ability of smart devices to collect data autonomously",
+        "ubiquitous connectivity",
+        "smart algorithms and analytics",
+        "all of the above"
+      ],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Which communication protocol is used between sensor devices in Ambusens WBAN system",
+      options: ["3G", "WLAN/Wi-fi", "IEEE 802.15.4", "IEEE 802.15.1"],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    },
+    {
+      question: "Passive and omnidirectional sensor is:",
+      options: ["Temperature", "Water-level", "Soil moisture", "All of the above"],
+      answer: 3,
+      topic: "Case Study",
+      week: 12
+    }
+  ,  
+  // ****************************** Week 11 ************************************************
+    {
+      question: "What are some of the other names of the smart grids?",
+      options: ["Electricity with a brain", "Energy internet", "Electronet", "All of these"],
+      answer: 3,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Smart Grid follows which type of the flow of energy?",
+      options: ["Bidirectional", "Unidirectional", "All of these", "None of these"],
+      answer: 0,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Which of the following is not a benefit associated with smart grids?",
+      options: ["Efficient transmission of electricity", "Lower electricity rates", "Unreliable and insecure electricity", "Improved security"],
+      answer: 2,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Which of the following is a component of smart grid communication?",
+      options: ["Gateways", "Smart meters", "MDMSs", "All of these"],
+      answer: 3,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Fill in the blank. ___________ can be used as an energy source in on-peak hours.",
+      options: ["PMUs", "DAUs", "PEVs", "None of these"],
+      answer: 2,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Which of the following is a type of Dynamic System Attacks?",
+      options: ["Replay Attacks", "Dynamic data injection attacks", "Covert attacks", "All of these"],
+      answer: 3,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Which of the following statements are true about gateways?",
+      options: [
+        "Statements I and II",
+        "Statements I and III",
+        "Statements II and III",
+        "Statement I, II and III"
+      ],
+      answer: 3,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Fill in the blank. ____________ is a centralized coordinator for smart grid communication.",
+      options: ["Gateway", "Smart meter", "PMU", "MDMS"],
+      answer: 3,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Fill in the blank. ____________ are available protocols for smart home appliances.",
+      options: ["C-Bus", "DECT", "EnOcean", "All of these"],
+      answer: 3,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Fill in the blank. IIoT is a network of____________.",
+      options: ["Physical objects", "Systems", "Platforms", "All of the above"],
+      answer: 3,
+      topic: "IIoT",
+      week: 11
+    },
+    {
+      question: "IIoT is based on Rip & Replace approach.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "IIoT",
+      week: 11
+    },
+    {
+      question: "Which of the following happened in the 1st Revolution?",
+      options: ["Mass production", "Internet evolution", "Automation", "None of these"],
+      answer: 3,
+      topic: "IIoT",
+      week: 11
+    },
+    {
+      question: "Which of the following is a challenge of IIoT?",
+      options: ["Worker health and safety", "Environmental production", "Optimized operations", "All of these"],
+      answer: 3,
+      topic: "IIoT",
+      week: 11
+    },
+    {
+      question: "Monitoring and restoration of the traditional electrical grid is done manually.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "What is Hadoop used in?",
+      options: ["Distributed processing of large datasets", "Large clusters of computers", "All of these", "None of these"],
+      answer: 2,
+      topic: "Data Analytics",
+      week: 11
+    }  
+  ,
+  {
+    question: "Net metering depends on –",
+    options: [
+      "Energy consumed by the consumers and energy generated by the grid",
+      "Energy consumed by the consumers and energy supplied back to the grid",
+      "Only energy consumed by the consumer",
+      "None of the above"
+    ],
+    answer: 1,
+    topic: "Smart Grids",
+    week: 11
+  },
+  {
+    question: "IIoT is mainly focused on",
+    options: [
+      "Convenience of individuals",
+      "Efficiency, safety and security of operation and individuals.",
+      "Efficiency of the system.",
+      "Data security."
+    ],
+    answer: 1,
+    topic: "IIoT",
+    week: 11
+  },
+  {
+    question: "What is the key technology to enable V2V and V2R communication?",
+    options: [
+      "Short Range Communication",
+      "Dedicated Short Range Communication",
+      "Long Range Communication",
+      "Medium Range Communication"
+    ],
+    answer: 1,
+    topic: "IIoT",
+    week: 11
+  },
+  {
+    question: "Smart grid enables –",
+    options: [
+      "Distributed energy management",
+      "Centralized energy management",
+      "Both distributed and centralized energy management",
+      "None of these"
+    ],
+    answer: 0,
+    topic: "Smart Grids",
+    week: 11
+  },
+  {
+    question: "What are the risks associated with IIoT?",
+    options: [
+      "Lack of vision and leadership",
+      "Cheap sensors",
+      "Confident workforce",
+      "Both cheap sensors and confident workforce"
+    ],
+    answer: 0,
+    topic: "IIoT",
+    week: 11
+  },
+  {
+    question: "MDMS is the context of smart grids stands for:",
+    options: [
+      "Meter data management system",
+      "Metric data measurement system",
+      "Metric data monitoring system",
+      "None of these"
+    ],
+    answer: 0,
+    topic: "Smart Grids",
+    week: 11
+  },
+  {
+    question: "Traditional RDBMS unable to process –",
+    options: [
+      "Structured data",
+      "Unstructured data",
+      "Both structured and unstructured data",
+      "None of these"
+    ],
+    answer: 1,
+    topic: "Data Analytics",
+    week: 11
+  },
+  {
+    question: "The smart grid is also termed as:",
+    options: [
+      "Electricity with a brain",
+      "The energy internet",
+      "The electronet",
+      "All of these"
+    ],
+    answer: 3,
+    topic: "Smart Grids",
+    week: 11
+  },
+  {
+    question: "Traditional electric grids are associated with:",
+    options: [
+      "Energy generation is done in centralized power plants",
+      "Energy distribution is one directional – from the power plant to the homes or industries.",
+      "Uni‐ directional communication",
+      "All of these"
+    ],
+    answer: 3,
+    topic: "Smart Grids",
+    week: 11
+  },
+  {
+    question: "The major requirements of IIoT include",
+    options: [
+      "Smaller, less expensive sensors which makes them easily accessible.",
+      "Distributed control of assembly line, automated monitoring, control and maintenance.",
+      "Both a and b",
+      "None of these"
+    ],
+    answer: 2,
+    topic: "IIoT",
+    week: 11
+  },
+  {
+    question: "Which of the following is not a property associated with power quality of smart grids:",
+    options: [
+      "Self‐ Healing",
+      "Frequency Monitoring and Control",
+      "Load Forecasting",
+      "Asset Management"
+    ],
+    answer: 3,
+    topic: "Smart Grids",
+    week: 11
+  },
+  {
+    question: "Home power generation is a term associated with:",
+    options: [
+      "Power generation system at consumers‐ end",
+      "Rooftop solar electric systems",
+      "Small wind turbines",
+      "All of these"
+    ],
+    answer: 3,
+    topic: "Smart Grids",
+    week: 11
+  },
+  {
+    question: "Zigbee is standardized under which of the following protocols?",
+    options: [
+      "IEEE 802.15.4 protocol",
+      "IEEE 802.16.4 protocol",
+      "IEEE 802.11a",
+      "IEEE 802.13.2"
+    ],
+    answer: 0,
+    topic: "IIoT",
+    week: 11
+  },
+  {
+    question: "The typical data rate associated with EnOcean is?",
+    options: [
+      "9600 bps",
+      "3200 bps",
+      "19200 bps",
+      "1152300 bps"
+    ],
+    answer: 0,
+    topic: "IIoT",
+    week: 11
+  },
+  {
+    question: "Connected vehicles are capable of:",
+    options: [
+      "Communicating with other devices within the vehicle",
+      "Communicating with other similar vehicles",
+      "Communicating with fixed infrastructure",
+      "All of these"
+    ],
+    answer: 3,
+    topic: "IIoT",
+    week: 11
+  }
+  ,
+    {
+      question: "Which among the following is the most probable application scenario for a smart grid?",
+      options: ["Home automation", "Hospital networks", "Intelligent power plants", "Crop monitoring"],
+      answer: 2,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "With respect to a smart grid, which stakeholders are potentially benefitted?",
+      options: ["Energy Service providers", "Energy consumers/customers", "Both energy service provides and consumers", "Neither energy service providers nor consumers."],
+      answer: 2,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "It is not possible to perform load forecasting using a smart grid.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "With respect to the following Smart Grid architecture, which among the following is the most probable utility of the IP network?",
+      image: "images/ass11que4.png",
+      options: ["IP network has no utility", "IP network is used to connect smart grid components globally for seamless data transfer", "IP network is used for multimedia video streaming only", "IP network is used to induce more congestion"],
+      answer: 1,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Smart Home is an isolated concept and is not integrable with smart grid?",
+      options: ["False", "True"],
+      answer: 0,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Which of the following is a cloud application of smart grid?",
+      options: ["Information management", "Energy management", "Security", "All of these"],
+      answer: 3,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "Which of the following is not a vulnerability of Smart Grid?",
+      options: ["Integrity", "Physical threats", "Dynamic system attacks", "None of these"],
+      answer: 3,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "IIoT corresponds to which industrial revolution?",
+      options: ["1st", "2nd", "3rd", "4th"],
+      answer: 3,
+      topic: "IIoT",
+      week: 11
+    },
+    {
+      question: "IIoT is inherently data intensive.",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "IIoT",
+      week: 11
+    },
+    {
+      question: "Which among the following is one of the requirements and utility of IIoT?",
+      options: ["Power plant interruption", "Power plant virtualization", "Power plant decentralization", "Power plant denotification"],
+      answer: 1,
+      topic: "IIoT",
+      week: 11
+    },
+    {
+      question: "Smart Grid follows which type of flow of energy?",
+      options: ["Bidirectional", "Unidirectional", "Both a and b", "Neither a nor b"],
+      answer: 0,
+      topic: "Smart Grids",
+      week: 11
+    },
+    {
+      question: "What is the Flow of data?",
+      options: ["Acquisition > Generation > Storage > Analysis", "Generation > Storage > Analysis > Acquisition", "Generation > Acquisition > Storage > Analysis", "None of these"],
+      answer: 2,
+      topic: "Data Analytics",
+      week: 11
+    },
+    {
+      question: "Intelligent transport system is least likely to render which of the following connectivity?",
+      options: ["Vehicle-to-vehicle connectivity", "Vehicle-to-sensor connectivity", "Vehicle-to-road infrastructure", "Vehicle-to-home connectivity"],
+      answer: 3,
+      topic: "IIoT",
+      week: 11
+    },
+    {
+      question: "Approximately around ________ of the total data available currently in the world is unstructured.",
+      options: ["20 %", "40 %", "60 %", "80 %"],
+      answer: 3,
+      topic: "Data Analytics",
+      week: 11
+    },
+    {
+      question: "SQL manages ________________ data.",
+      options: ["Unstructured", "Corrupt", "Structured", "Non-organized"],
+      answer: 2,
+      topic: "Data Analytics",
+      week: 11
+    }  
+  ,
   //********************************************************* Week 3 *********************************************
     {
       question: "State whether the following statement is true or false. Statement: Wired HART lacks a network layer.",
