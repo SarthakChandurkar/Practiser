@@ -3,9 +3,16 @@ Sensors and Actuators
 MQTT CoAP XMPP AMQP
 Connectivity technologies
 Sensor networks
+UAV & M2M
 Interoperability
 Arduino
 Python
 RaspberryPi
 SDN
 Cloud
+Smart Cities & Homes
+Connected Vehicles
+Smart Grids
+IIoT
+Data Analytics
+Case Study

@@ -1,5 +1,1248 @@
 const data = [
+  // ***************************************** Week 10 *********************************************
+    {
+      question: "Data fusion enables optimum utilization of massive data gathered from multiple sources.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is a stage in data fusion?",
+      options: ["Decision level", "Feature level", "Pixel level", "All of the above"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is one of the challenges of Data fusion?",
+      options: ["Imperfection", "Conflicts", "Ambiguity", "All of the above"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is one of the theory of evidence-based mathematical methods of data fusion?",
+      options: ["Belief function", "Bayesian analysis", "ANN", "None of these"],
+      answer: 0,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "DLNA stands for Digital Living Network Alliance.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following are the functional layers in smart parking?",
+      options: ["Information collection", "System Deployment", "Service Dissemination", "All of these"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following statements are true about the HAN standards?",
+      image: "images/ass10que72023.png",
+      options: ["Statements I and II", "Statements I and III", "Statements II and III", "Statements I, II and III"],
+      answer: 0,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following are true about X-10?",
+      image:"images/ass10que82023.png",
+      options: ["Statement I and II", "Statement II and III", "Statement I and III", "Statement I, II and III"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Fill in the blank. ____________ enables vehicles to wirelessly share a diverse range of information.",
+      options: ["Local area network", "V2X Paradigm", "V2A Paradigm", "Metropolitan area network"],
+      answer: 1,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Which of the following is a property of Vehicular Ad-hoc Networks?",
+      options: ["Is based on DSRC", "Is based on WAVE", "Guaranteed low latency", "All of these"],
+      answer: 3,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Knob is a switch type of INN.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Which of the following is responsible for central coordination in Body-brain architecture?",
+      options: ["Body", "INN", "Spinal cord", "None of these"],
+      answer: 3,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Which of the following stands for DSRC?",
+      options: ["Directed Short Range Communication", "Dedicated Short Range Communication", "Directed Small Range Communication", "Dedicated Small Range Communication"],
+      answer: 1,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Ad-hoc is a domain of VANET.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "What are the disadvantages of V2X communication?",
+      options: ["Increased traffic safety", "Tracking of movement", "Efficient use of fuel", "None of these"],
+      answer: 1,
+      topic: "Connected Vehicles",
+      week: 10
+    }
+  ,  
+    {
+      question: "Smart homes can be used for _____________.",
+      options: ["Home monitoring", "Conservation of resources like electricity", "Security and safety", "All of these"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is an IoT challenge in smart cities?",
+      options: ["Reliability", "Large scale", "Big data", "All of these"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Select the statement(s) that are true for smart parking.",
+      image:"images/ass10que32024.png",
+      options: ["Statement I", "Statement II", "Statements I, II, and III", "None of these"],
+      answer: 2,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is a functional layer in smart parking?",
+      options: ["Information Collection", "System Deployment", "Service Dissemination", "All of these"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "The mobile sensing in smart parking collects the information __________.",
+      options: ["in-place", "along the route", "None of these", "All of these"],
+      answer: 1,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "The network which provides amalgamation of various systems within a home is known as __________.",
+      options: ["Local Area Network", "Metropolitan Area Network", "Global Area Network", "Home Area Network"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is the correct full form of DLNA Standards for HAN?",
+      options: ["Digital Lifestyle Network Alliance", "Digital Living Network Alliance", "Digital Lifestyle Network Algorithm", "None of these"],
+      answer: 1,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is a part of ZigBee Alliance?",
+      options: ["Mitsubishi", "Honeywell", "All of these", "None of these"],
+      answer: 2,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Network and Application layers are defined by IEEE 802.15.4 in Zigbee.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is a feature of Content Centric Networking?",
+      options: ["Hierarchically named data", "Scalable data dissemination", "In-network caching", "All of these"],
+      answer: 3,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Which of the following is a phase of ICV development?",
+      options: ["Based on 2G", "Based on 4G LTE", "Vehicles connected to cloud", "All of these"],
+      answer: 3,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Which of the following is a property of V2X?",
+      options: ["Restricted to a single source", "Distributed architecture", "Both of these", "None of these"],
+      answer: 1,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "The vehicles cannot be mobile in the Ad-hoc domain of VANET.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Which of the following is a domain of VANET?",
+      options: ["In-vehicle", "Ad-hoc", "All of these", "None of these"],
+      answer: 2,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Fill in the blank. ICV is based on ________.",
+      options: ["Dedicated Short Range Communication", "Directed Short Range Communication", "Dedicated Small Range Communication", "All of these"],
+      answer: 0,
+      topic: "Connected Vehicles",
+      week: 10
+    }
+  ,  
+    {
+      question: "Which among the following are active connected entities in a holistic smart city environment?",
+      options: ["Police station", "Banks", "Transport centers", "All of the above"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "With the help of ICT tools, it is possible to increase and improve citizen participation for a good governance based smart city",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which among the following is a possible challenge with respect to smart parking lots?",
+      options: ["Efficient auto-routing of vehicles", "Locating current vacant spots", "Auto-charging of vehicles", "All of the given"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "What refers to combining information from multiple sensor sources?",
+      options: ["Information Collection", "Multi-sensor deployment", "Multi-sensor dissemination", "Multi-sensor data fusion"],
+      answer: 3,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is one of the theory of evidence-based mathematical methods of data fusion?",
+      options: ["Belief function", "Bayesian analysis", "ANN", "None of these"],
+      answer: 0,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "With respect to data fusion from multiple IoT sensors, does outlier data present with a challenge?",
+      options: ["No", "Yes"],
+      answer: 1,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following is a phase of ICV development?",
+      options: ["Based on 2G", "Based on 4G LTE", "Vehicles connected to cloud", "All of these"],
+      answer: 3,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "With which of the following can the decision-making gap between the sensors and the actuators be bridged.",
+      options: ["SDN", "OpenStack Horizon", "Artificial Intelligence (AI)", "Arduino IDE"],
+      answer: 2,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "Which of the following statements are true about the HAN standards?",
+      image:"images/ass10que72023.png",
+      options: ["Statements I and II", "Statements I and III", "Statements II and III", "Statements I, II and III"],
+      answer: 0,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "What is UPnP?",
+      options: ["Uninterrupted Post-messaging", "Universal Pull Streaming", "Universal Plug and Play", "Unhindered Public Networking"],
+      answer: 2,
+      topic: "Smart Cities & Homes",
+      week: 10
+    },
+    {
+      question: "What are the disadvantages of V2X communication?",
+      options: ["Increased traffic safety", "Tracking of movement", "Efficient use of fuel", "None of these"],
+      answer: 1,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "Mobility of vehicles in a V2X environment limit which of the following that restricts the use of TCP/IP for V2X communication?",
+      options: ["Communication between vehicular infrastructure", "Localization of data", "Backbone routing in IP core networks", "Human-vehicle interaction"],
+      answer: 1,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "In VANET, link durations are long and easily scaled-up to include all the vehicles on the road?",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "CCN is derived from ICN architecture.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connected Vehicles",
+      week: 10
+    },
+    {
+      question: "In an ICV environment, efficient cooperation between different vehicles on a highway can lead to a safer scenario with respect to collision and avoiding incoming traffic.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Connected Vehicles",
+      week: 10
+    }
+  ,  
+  //************************************************************ Week 4 ********************************
+
+    {
+      question: "With respect to WSN coverage problems, the OGDC algorithm is an acronym for:",
+      options: ["Optimal Geographic Density Control", "Optimal Geographic Distance Control", "Optimal Geographic Distance Coverage", "Optimal geographic Density Coverage"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of these can be regarded as the salient feature(s) of a 3D UWSN architecture?",
+      options: ["Silent & energy-efficient scheme for mobile UWSNs", "Iterative approach with less initiators nodes (anchors) required", "Mobility prediction", "All of these"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "EM communication for Nano-networks centers around:",
+      options: ["0.1-10 Terahertz channel", "0.1-10 Gigahertz channel", "10-100 Terahertz channel", "10-100 Gigahertz channel"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "WMSNs stand for:",
+      options: ["Wired Multimedia Sensor Networks", "Wireless Multimedia Sensor Networks", "Wireless Mobile Sensor Networks", "Wireless Machine Sensor Network"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "UAV-VANETS link-up may be used for:",
+      options: ["Visual guidance", "Data-muling", "Coverage enhancement", "All of these"],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Sensor coverage in WSNs deal with:",
+      options: ["Sensor placement", "Density control", "Both a and b", "None of these"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In WSN area coverage problem, which is TRUE?",
+      options: ["Energy-efficient random coverage", "Connected random coverage", "A network is connected if any active node can communicate with any other active nodes", "All of these"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In Human-centric sensing, which of these is NOT a constraint?",
+      options: ["Energy of sensing devices", "Privacy of users", "Participant selection", "Network size"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of these topologies cannot be a reliable UAV network topology",
+      options: ["Star", "Flat mesh", "Hierarchical mesh", "Tree"],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Low-end M2M nodes are:",
+      options: ["Mobile", "Energy efficient", "Complex", "Costly"],
+      answer: 1,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "A 10-100nm EM wave incident on a Graphene layer separated by a dielectric gives rise to:",
+      options: ["Surface Plasmonic Polarization", "Surface Polarization Pulse", "Sequential Pulse Polarization", "None of these"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "A nano-device size is typically in the range of:",
+      options: ["10e-6m", "10e-9m", "10e-10m", "10e-12m"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "With respect to WSN coverage problems, the OGDC algorithm is an acronym for:",
+      options: ["Optimal Geographic Density Control", "Optimal Geographic Distance Control", "Optimal Geographic Distance Coverage", "Optimal geographic Density Coverage"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "A crossing with respect to WSN is if it is in the interior region of at least one node’s coverage disk.",
+      options: ["Partially covered", "Covered", "Not covered", "Isolated"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "MANETs are:",
+      options: ["Infrastructure oriented", "Infrastructure less", "Partially infrastructure oriented", "Partially infrastructure less"],
+      answer: 1,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Self-CHOP property of MANETs signify:",
+      options: ["Configure, Heal, Optimize, Protect", "Communicate, Heal, Optimize, Protect", "Configure, Heal, Organize, Protect", "Communicate, Heal, Organize, Protect"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "A UAV network Star topology is:",
+      options: ["Self-configuring", "Multi-hop based", "Not self-configuring", "Both a and b"],
+      answer: 2,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "UAV-VANETS link-up may be used for:",
+      options: ["Visual guidance", "Data-muling", "Coverage enhancement", "All of these"],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "M2M stands for:",
+      options: ["MAC to MAC communication", "Machine to MAC communication", "Machine to machine communication", "MAC to machine communication"],
+      answer: 2,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "In a M2M ecosystem, Internet service providers:",
+      options: ["Provide their infrastructures for M2M device communications.", "Are responsible for devices providing raw data.", "Is an individual or company that utilizes M2M applications.", "None of these"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    }
+  ,  
+  
+    {
+      question: "In which of the following frequency range does nano networks work?",
+      options: ["radio waves", "micro waves", "terahertz waves", "infrared"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "MANETs are:",
+      options: ["Infrastructure oriented", "Infrastructure less", "Partially infrastructure oriented", "Partially infrastructure less"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In Human-centric sensing, which of these is NOT a constraint?",
+      options: ["Energy of sensing devices", "Privacy of users", "Participant selection", "Network size"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "UAV-VANETS link-up may be used for:",
+      options: ["Data relay", "Navigation", "Sensing", "All of these"],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "A PIR Sensor stands for:",
+      options: ["Proximity Infra-Red", "Passive Infra-Red", "Picture Infra-Red", "None of these"],
+      answer: 1,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of the following is true for UAV networks?",
+      options: ["Communication links break frequently", "It is very complex", "It has huge power requirements", "All of the above"],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of these topologies cannot be a reliable UAV network topology?",
+      options: ["Star", "Flat mesh", "Hierarchical mesh", "Tree"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "With respect to stationary sensor networks, which of the following options apply?",
+      options: ["Easy deployment", "Node can be placed at an optimized distance", "Easy topology maintenance", "All of these"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of these can be regarded as the salient feature(s) of a 3D UWSN architecture?",
+      options: ["Silent & energy-efficient scheme for mobile UWSNs", "Iterative approach with less initiators nodes (anchors) required", "Mobility prediction", "All of these"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Machine-to-Machine (M2M) is designed for",
+      options: ["isolated systems using proprietary solutions", "cross platform integration", "home automation only", "none of the above"],
+      answer: 1,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "In M2M communications, which of the following nodes is/are typically used for general environmental monitoring?",
+      options: ["Low-end sensor nodes", "Mid-end sensor nodes", "High-end sensor nodes", "All the above"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "In M2M, which of the following is true?",
+      options: ["Low-end sensor nodes are mobile", "Both mid-end and high-end sensor nodes are always static", "Both low-end and high-end sensor nodes are mobile", "High-end sensor nodes are mobile"],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of the following is/are the challenge(s) of human-centric sensing?",
+      options: ["Energy of devices", "Participant selection", "Privacy of users", "All the above"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "High-end M2M nodes have:",
+      options: ["Mobility", "QoS guarantees", "Low density deployment", "All of these"],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of these is to be considered for topology management in Wireless Multimedia Sensor Network (WMSN)?",
+      options: ["Energy of sensing devices", "Coverage area", "Connectivity", "All of these"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    }
+  ,  
+    {
+      question: "Which of the following UAV topology is self-configuring?",
+      options: ["Mesh", "Star", "Both mesh and star", "Grid"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "In WMSNs application, which of the following deployment can provide better sensing \n and prolong network lifetime?",
+      options: ["Scalar sensor nodes", "Camera sensor nodes", "Both scalar and camera sensor nodes", "Vector sensor nodes"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In which of the following algorithms only a subset of nodes in the WASN participate in \n sensing, communication, and computation?",
+      options: ["Localized", "Distributed", "Centralized", "All of these"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In general, the target-tracking problem consists of a WSN, whose nodes are strategically \n or randomly deployed across the sensor field. Is the statement true?",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In Ad-Hoc FANETs, which of the following set-up can be considered as ground network?",
+      options: ["Stationary WSNs", "Control stations", "VANETS", "All of these"],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of the following components in M2M monitors the status of devices and M2M \n area networks, and controls them based on their status?",
+      options: ["M2M User Platform", "M2M Device Platform", "M2M Service Platform", "M2M Access Platform"],
+      answer: 1,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "In the guided target-tracking problem formulation, a tracker is added to the problem. The \n tracker follows the trajectory defined by beacon nodes to intercept the target. Which of the \n following objectives best define this tracking algorithm?",
+      options: ["to fuse data about the target", "to use the least amount of communication to reach the target", "to reach the target in the shortest possible time", "to increase the network lifetime"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In gateway selection algorithm in FANETs, each UAV acquires the information of all UAVs within its  hop(s).",
+      options: ["One", "Two", "More than one", "Can’t be specific"],
+      answer: 1,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "A crossing is covered if it is in the  region of at least one node’s coverage disk.",
+      options: ["exterior", "interior", "either exterior or interior", "boundary"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "There are several major challenges related to target-tracking applications. Which of the \n following is NOT among those challenges?",
+      options: ["target recovery", "node non-cooperation", "future-position estimation", "energy management"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of the following components in M2M manages inquiry?",
+      options: ["M2M User Platform", "M2M Device Platform", "M2M Service Platform", "M2M Access Platform"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of the following is NOT regarded as one of the major scatters of underwater sound \n in Underwater Acoustic Sensor Networks?",
+      options: ["Non-linear internal waves", "Solitons", "Linear internal waves", "None of these"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In Optimal Geographical Density Control (OGDC) algorithm, a node  if its \n coverage area is completely covered.",
+      options: ["wakes up", "starts listening", "sleeps", "backs off"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of the following elements of target-tracking algorithm can perform data fusion?",
+      options: ["Active node", "Inactive node", "Beacon node", "Sink node"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of the following components of Mobile Wireless Sensor Networks (MWSN) \n moves in order to collect data from sensor nodes?",
+      options: ["Mobile sensor node", "Data mule", "Mobile sink", "Both data mule and mobile sink"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    }
+  ,  
+    {
+      question: "State whether the following statement is true or false.\nStatement: Coverage in WSN is defined as the area-of-interest is covered satisfactorily.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "If transmission range >= 2* sensing range,",
+      options: [
+        "Coverage implies greater coverage",
+        "Coverage implies connectivity",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "The two types of reporting in WSN are -",
+      options: [
+        "Event driven and machine driven",
+        "Event driven and weather driven",
+        "Event driven and on demand",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "The objective of coverage in WSN is to use a _______________ number of sensors and _______________ the network lifetime.",
+      options: [
+        "minimum, minimize",
+        "minimum, maximize",
+        "maximum, minimize",
+        "maximum, maximize"
+      ],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State true or false.\nThe disadvantages of stationary Wireless Sensor Networks are -\nStatement-I: Node failure may result in partition of networks.\nStatement-II: Topology cannot change automatically.",
+      options: [
+        "Statement-I True, Statement-II False",
+        "Both Statements are False",
+        "Both Statements are True",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "A _________________ in MWSN moves in order to collect data from sensor nodes and goes to the sink and delivers the collected data from different sensor nodes.",
+      options: [
+        "Drop",
+        "Molecule",
+        "Mule",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "________________ allows distributed sensing carried by humans and the goal is not just to collect data but to allow the common people to assess and share the knowledge.",
+      options: [
+        "Voluntary sensing",
+        "Compressive sensing",
+        "Dynamic sensing",
+        "Participatory sensing"
+      ],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of the following is/are NOT feature/features of UAV networks?",
+      options: [
+        "Mesh or star networks",
+        "Multi-tasking",
+        "Large coverage area",
+        "None of these"
+      ],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of the following is NOT a UAV network constraint?",
+      options: [
+        "Frequent link breakages",
+        "Prone to malfunction",
+        "Very Complex",
+        "None of these"
+      ],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "In _____________________ configuration, UAVs form multiple star topology. One node from each group connects to the ground station.",
+      options: [
+        "Multi-star",
+        "Ring",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "The full form of FANET is?",
+      options: [
+        "Flying Ad Hoc Network",
+        "Fast Ad Hoc Network",
+        "Fidelity Ad Hoc Network",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Low-end sensor nodes are -",
+      options: [
+        "Whose deployment has high density in order to increase network lifetime and survivability.",
+        "Who perform basic functions such as data aggregation, auto configuration, and power saving.",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of the following are the components of the M2M ecosystem?",
+      options: [
+        "Trees",
+        "Ocean",
+        "Device Providers",
+        "Non-service users"
+      ],
+      answer: 2,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false\nStatement: The M2M Device Platform enables access to objects connected to the Internet anywhere any time.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false\nStatement: The M2M Application Platform provides integrated services based on device collected data-sets.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    }
+,  
+    {
+      question: "State whether the following statement is true or false.\nStatement: Coverage in WSN is defined as the area-of-interest that is covered satisfactorily.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "If transmission range >= 2* sensing range,",
+      options: [
+        "Coverage implies connectivity",
+        "Coverage implies greater coverage",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Forest fire monitoring in WSN is an example of which type of reporting?",
+      options: [
+        "Event driven",
+        "On-demand",
+        "Scattered",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false.\nStatement: Objective of coverage in WSN is to use minimum number of sensors and maximize network lifetime.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "What is the full form of AUV in the context of mobile wireless sensor networks?",
+      options: [
+        "Aerial and Underwater Vehicle",
+        "Ambient and Underprivileged Vehicle",
+        "Autonomous Underwater Vehicle",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "In mobile wireless sensor networks, the sensor nodes are capable of _____________ and measuring the condition of their surrounding environments.",
+      options: [
+        "collaborating with one another",
+        "destroying one another",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false.\nStatement: In mobile sensor networks, the sensor nodes come in close proximity of sink and deliver the data.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of the following is/are a challenge/challenges in Human-centric Sensing?",
+      options: [
+        "Energy of devices",
+        "Participant selection",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of the following is/are a feature/features of UAV networks?",
+      options: [
+        "Mesh or star networks",
+        "Multi-tasking",
+        "Large coverage area",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false.\nStatement: Frequently change in network topology is a benefit of UAV networks.",
+      options: ["False", "True"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of the following is NOT a feature of multi-UAV system?",
+      options: [
+        "Low failures",
+        "High scalability",
+        "Low survivability",
+        "High cost"
+      ],
+      answer: 2,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false.\nStatement: M2M communications are free of any human intervention.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Which of the following is NOT an M2M node type?",
+      options: [
+        "Secure End Node",
+        "High End Node",
+        "Low End Mode",
+        "Mid End Node"
+      ],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "What is the full form of M2SP in the context of Machine-to-Machine Communication?",
+      options: [
+        "M2MService Platform",
+        "M2MSession Packet",
+        "M2MSecure Packaging",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "The ______________ provides integrated services based on device collected data-sets.",
+      options: [
+        "M2MApplication Platform",
+        "M2MService Platform",
+        "M2MHardware Platform",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    }
+  ,  
+    {
+      question: "State whether the following statement is true or false.\n\nStatement: In “AID”, a set of sensor nodes are deployed over an agricultural field.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false.\n\nStatement: Ultrasonic sensor senses the distance at which an object is located.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false.\n\nIn case of static sensors, where to deploy and/or activate sensors in WSN is a coverage problem.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false.\n\nStatement: Objective of coverage in WSN is to use maximum number of sensors and minimize network lifetime.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State whether the following statement is true or false.\n\nStatement: “A crossing is covered if it is in the interior of at least one node’s coverage disk.”",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State which of the following is/are correct for stationary wireless sensor networks.",
+      options: [
+        "Topology cannot be changed automatically.",
+        "Node failure may result in partition of networks.",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Most problems in static WSN can be classified as -",
+      options: [
+        "No coverage",
+        "More coverage",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of the following is/are correct with respect UAV networks?",
+      options: [
+        "Multi-tasking",
+        "Large coverage area",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "State True or False.\n\nStatement: UAV networks are scalable.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "In Mobile WSN, the Data Mules",
+      options: [
+        "Collect the data from sensor nodes",
+        "Goes to the sink and delivers the collected data",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "The full form of AUV is -",
+      options: [
+        "Antenna Used Vehicle",
+        "Autonomous Underwater Vehicle",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      answer: 1,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "Humans carry their devices and move around. Sensors embedded within the devices record readings. Sensory readings are then transmitted for processing.\n\nThis paradigm of sensing is known as –",
+      options: [
+        "Machine Centric Sensing",
+        "Device Centric Sensing",
+        "Human Centric Sensing",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "State True or False.\n\nEnergy of Devices and Participant selection are not two major problems in Human Centric Sensing.",
+      options: ["True", "False"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 4
+    },
+    {
+      question: "Which of the following network topologies is used in UAV networks?",
+      options: ["Bus", "Star", "Both (a) and (b)", "Neither (a) nor (b)"],
+      answer: 1,
+      topic: "UAV & M2M",
+      week: 4
+    },
+    {
+      question: "State true of false.\n\nThe M2M Application Platform provides integrated services based on device collected data-sets.",
+      options: ["True", "False"],
+      answer: 0,
+      topic: "UAV & M2M",
+      week: 4
+    }
+  ,  
     // ******************************** Week 12 ******************************************
+      {
+        question: "Qualitative analysis refers to the process by which numerical data is analyzed?",
+        options: ["True", "False"],
+        answer: 1,
+        topic: "Data Analytics",
+        week: 12
+      },
+      {
+        question: "Which of the following data analysis technique involve the use of study of difference of variance?",
+        options: ["ARIMA", "ANOVA", "DNN", "OpenFlow"],
+        answer: 1,
+        topic: "Data Analytics",
+        week: 12
+      },
+      {
+        question: "Given that you have an independent variable and that you want to predict the dependent variable based on the relationship between the two variables. Which among the following technique would you use?",
+        options: ["ANOVA", "ARIMA", "Regression Analysis", "Pre-analysis"],
+        answer: 2,
+        topic: "Data Analytics",
+        week: 12
+      },
+      {
+        question: "With respect to AgriSens, how many logical layers are there in its architecture?",
+        options: ["Perception Layer", "Processing Layer", "Application Layer", "All of the given"],
+        answer: 3,
+        topic: "Case Study",
+        week: 12
+      },
+      {
+        question: "AgriSens supports real-time monitoring of soil moisture conditions and instant reporting to a dashboard.",
+        options: ["False", "True"],
+        answer: 1,
+        topic: "Case Study",
+        week: 12
+      },
+      {
+        question: "What is the data aggregator is also known as in the context of IoT in smart healthcare?",
+        options: ["CPU", "LPU", "APU", "PPU"],
+        answer: 1,
+        topic: "Case Study",
+        week: 12
+      },
+      {
+        question: "Fill in the blanks. The effect size for determining statistical significance is the standardized _________ difference between two groups.",
+        options: ["Median", "Mean", "Inter quartile range", "None of the above"],
+        answer: 1,
+        topic: "Data Analytics",
+        week: 12
+      },
+      {
+        question: "Processing the sensed data on the device itself is known as __________ approach.",
+        options: ["Network based", "In-place", "Out of the place", "None of these"],
+        answer: 1,
+        topic: "Case Study",
+        week: 12
+      },
+      {
+        question: "Fill in the blank. Processing the handheld activity device data with artificial intelligence can be used for ________.",
+        options: ["Fall detection", "Heart rate detection", "Vehicle detection", "All of these"],
+        answer: 0,
+        topic: "Case Study",
+        week: 12
+      },
+      {
+        question: "Which of the following is an assumption of ANOVA?",
+        options: ["Homogeneity of variances", "Normally distributed response variable", "Independence of observations", "All of these"],
+        answer: 3,
+        topic: "Data Analytics",
+        week: 12
+      },
+      {
+        question: "Select the statement(s) that denote the type of ANOVA.\n\n\t Statement I: One way analysis\n\t Statement II: Two way analysis\n\t Statement III: K-way analysis",
+        options: ["Statement I", "Statement II", "Statements I, II, and III", "None of these"],
+        answer: 2,
+        topic: "Data Analytics",
+        week: 12
+      },
+      {
+        question: "AmbuSense is a privacy-aware system",
+        options: ["True", "False"],
+        answer: 0,
+        topic: "Case Study",
+        week: 12
+      },
+      {
+        question: "The two most relevant sensors directly used in agriculture are __________.",
+        options: ["Soil moisture and ECG sensor", "Soil moisture and water level sensor", "ECG sensor and water level sensor", "All of these"],
+        answer: 1,
+        topic: "Case Study",
+        week: 12
+      },
+      {
+        question: "Examples of dispersion measures include _______ and ______.",
+        options: ["Discrete, categorical", "Continuous, quantitative", "Discrete, quantitative", "Range, Variance"],
+        answer: 3,
+        topic: "Data Analytics",
+        week: 12
+      },
+      {
+        question: "Suppose that your smartphone tilts by an angle of 15 degrees. Which among the following sensors will detect this tilt?",
+        options: ["HC-SR04", "Gyroscope", "Accelerometer", "Monometer"],
+        answer: 1,
+        topic: "Case Study",
+        week: 12
+      }
+    ,    
     {
       question: "The two types of data analysis are _____________.",
       options: [
@@ -26,6 +1269,7 @@ const data = [
     },
     {
       question: "Select the statement(s) that denote the type of ANOVA.",
+      image:"images/ass12que32023.png",
       options: [
         "Statement I",
         "Statement II",
@@ -347,6 +1591,7 @@ const data = [
     },
     {
       question: "Which of the following statements are true about gateways?",
+      image:"images/ass11que72023.png",
       options: [
         "Statements I and II",
         "Statements I and III",
@@ -703,6 +1948,377 @@ const data = [
     }  
   ,
   //********************************************************* Week 3 *********************************************
+  
+    {
+      question: "The HART protocol was designed for:",
+      options: ["Home automation networking", "Networked Smart Field devices", "Vehicular networking", "All of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Channel hopping is performed at which HART layer?",
+      options: ["Physical", "Data link", "Network", "Application"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which amongst these is NOT a NFC mode of communication?",
+      options: ["Peer to peer", "Read/write", "Card emulation", "Beacon"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Bluetooth is a technology with :",
+      options: ["Full duplex links", "Half duplex links", "Both a and b", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "The PHY and MAC layers in ISA 100.11A are based upon;",
+      options: ["IEEE 802.11a", "IEEE 802.15.4", "IEEE 802.15.6", "IEEE 802.11g"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "The modulation scheme followed by Z-wave is:",
+      options: ["BPSK", "QPSK", "GFSK", "O-QSK"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which of these is NOT a part of sensor web?",
+      options: ["Observations & measurements (O&M)", "Energy efficiency", "Sensor model language (sensorml)", "Transducer model language (transducerml or TML)"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "Which topology is supported by Z-wave:",
+      options: ["Star", "Mesh", "Tree", "All of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Event aware topology management in WSNs include:",
+      options: [
+        "Timely detection of an event of interest",
+        "Monitoring the event",
+        "Adapting with the changes of event state",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "WBAN stands for:",
+      options: ["Wireless Buffer Area Networks", "Wireless Body Area Networks", "Wired Body Area Networks", "Wired Buffer Area Networks"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 3
+    }
+  ,  
+    {
+      question: "The number of channels incorporated in physical layer of the HART standard are:",
+      options: ["10", "15", "20", "64"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Channel hopping is performed at which HART layer?",
+      options: ["Physical", "Data link", "Network", "Application"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Class-1 Bluetooth devices have a range of:",
+      options: ["1m", "10m", "100m", "1000m"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "The paging operation of a Bluetooth device is used for:",
+      options: [
+        "Forming a connection between two Bluetooth devices.",
+        "Trying to discover other devices near it.",
+        "Entering a low-power sleep mode.",
+        "All of these"
+      ],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "The encoding scheme used in Z wave is;",
+      options: ["Bipolar NRZ", "Polar RZ", "Manchester", "Polar NRZ"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "This process of bypassing radio dead-spots in Z wave is done using a message called",
+      options: ["Healing", "Beacon", "Probe", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "WASN stands for:",
+      options: ["Wireless and Sensor networks", "Wired and Sensor networks", "Wireless Ad-hoc Sensor Networks", "None of these"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "SOS in sensor web stands for",
+      options: ["Sensor of a System", "System of Sensors", "Sensor Observation Service", "None of these"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "Social sensing in WSNs suffer from:",
+      options: [
+        "Inability to distinguish rare events from regular events",
+        "Ineffective wakeup and sensing under rare event monitoring scenario",
+        "Both",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "WBAN stands for:",
+      options: ["Wireless Buffer Area Networks", "Wireless Body Area Networks", "Wired Body Area Networks", "Wired Buffer Area Networks"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 3
+    }
+  ,  
+    {
+      question: "Which of the following handles packets, paging and inquiry in Bluetooth?",
+      options: ["L2CAP", "Baseband", "RFComm", "Physical Radio"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which of the following incorporates channel hopping after every packet transmission?",
+      options: ["Zigbee", "WirelessHART", "6LoWPAN", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "In “X” protocol, a central network controller device sets-up a network with 1 Network ID \n and multiple node IDs for the devices in it. The nodes with different Network IDs cannot \n communicate with each other. What is “X”?",
+      options: ["Z-wave", "Zigbee", "Bluetooth", "ISA 100.11A"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "In the context of Sensor Web, SensorML stands for",
+      options: ["Sensor Modeling language", "Sensor Machine language", "Sensor Markup language", "None of the above"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "Which of the following protocol is best suited to provide interference-free communication \n while minimizing latency and ensuring quality of service?",
+      options: ["WirelessHART", "ISA100.11A", "Both WirelessHART and ISA100.11A", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which of the following solution approach is used to overcome the limitation of \n ineffective wakeup and sensing under rare event monitoring scenario in social sensing?",
+      options: ["Duty-cycle management", "Sleep-cycle management", "Packet transmission management", "Both duty-cycle and sleep-cycle management"],
+      answer: 0,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "Which of the following technique Bluetooth master uses to avoid collisions during \n transmission in a Piconet?",
+      options: ["Frequency Division Multiplexing", "Frequency Hopping Spread Spectrum", "Time Division Multiplexing", "Direct Sequence Spread Spectrum"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which of the following limitation is faced by total co-operation in Wireless Ad Hoc and \n Sensor Networks?",
+      options: ["Decreasing network throughput", "Decreasing energy", "Both (a) and (b)", "No limitation exists"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "Which of the following can function over a reliable packet transfer protocol?",
+      options: ["L2CAP", "Service Discovery Protocol", "RFComm", "Physical Radio"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "In which of the following mode, NFC devices can act as both readers as well as tags?",
+      options: ["Reader/writer", "P2P", "Emulation", "NFC devices can’t act as both readers as well as tag"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    }
+  ,  
+  {
+    question: "In WSN, Information theoretic self-management (INTSEM) controls the transmission rate of a node by adjusting a node’s ____________.",
+    options: ["Duty cycle", "Lifetime", "Sleep time", "Can’t control the transmission rate"],
+    answer: 2,
+    topic: "Sensor networks",
+    week: 3
+  },
+  {
+    question: "Which of the following layer of ISA 100.11A supports mesh routing?",
+    options: ["Network layer", "Data link layer", "Transport layer", "MAC layer"],
+    answer: 1,
+    topic: "Sensor networks",
+    week: 3
+  },
+  {
+    question: "Which of the following is used to avoid interference-prone channels in HART?",
+    options: ["Channel blacklisting", "Channel switching", "Channel hopping", "Super-frames"],
+    answer: 1,
+    topic: "Connectivity technologies",
+    week: 3
+  },
+  {
+    question: "When the devices are not in range, messages are routed through different nodes to bypass obstructions created by household appliances or layouts. Which of the following exhibit such characteristic of avoiding radio dead-spots?",
+    options: ["Bluetooth", "6LoWPAN", "Z-wave", "Zigbee"],
+    answer: 2,
+    topic: "Connectivity technologies",
+    week: 3
+  },
+  {
+    question: "Which of the following is TRUE in terms of power (in mW) and range (in m) of the classes of Bluetooth devices?",
+    options: ["Class-1: Power=100mW, Range=100m", "Class-2: Power=2.5 mW, Range=100m", "Class-1: Power=2.5 mW, Range=100m", "Class-2: Power=100 mW, Range=100m"],
+    answer: 0,
+    topic: "Connectivity technologies",
+    week: 3
+  }
+,  
+    {
+      question: "Channel hopping is performed at which layer of HART?",
+      options: ["Physical", "Data link", "Network", "Application"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which of the following modulations is utilized by Zwave?",
+      options: ["Amplitude Phase Shift Keying (APSK)", "Quadrature Phase Shift Keying (QPSK)", "Frequency Shift Keying (FSK)", "Gaussian Frequency Shift Keying (GFSK)"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Near Field Communication (NFC) is based on the principle of",
+      options: ["Reflection", "Refraction", "Magnetic induction", "Electrical conductance"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Inquiry is run by one Bluetooth device to",
+      options: ["Form a connection with another device", "discover other devices near it", "participate in the network", "isolate from the network"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "The sniff mode in Bluetooth is used for",
+      options: ["Actively transmitting or receiving data", "Sleeping and only listening for transmissions at a set interval", "Switching in power‐saving mode where a device sleeps for a defined period and then returns back to active mode", "Deactivating the slave"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "WASN stands for:",
+      options: ["Wireless and Sensor networks", "Wired and Sensor networks", "Wireless Ad-hoc Sensor Networks", "None of these"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "This process of bypassing radio dead-spots in Z wave is done using a message called",
+      options: ["Healing", "Beacon", "Probe", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which channel encoding is used in Z-wave:",
+      options: ["RZ", "NRZ", "Manchester", "None of these"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Event aware topology management in WSNs include:",
+      options: ["Timely detection of an event of interest", "Monitoring the event", "Adapting with the changes of event state", "All of these"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "The WSN nodes are prone to:",
+      options: ["Malicious attacks", "Eavesdropping", "Interference", "All of these"],
+      answer: 3,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "In a wireless sensor network, a node which are unable to perform an operation, because of power failure and environmental effects is known as",
+      options: ["normal node", "selfish node", "failed node", "badly failed node"],
+      answer: 2,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "Bluetooth is a technology with:",
+      options: ["Full duplex links", "Half duplex links", "Both the above", "None of the above"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "Which of the following is a scheme for re-establishing the connectivity in the presence of dumb nodes in a wireless sensor networks?",
+      options: ["INTSEM", "CoRD", "SMAC", "DutyCon"],
+      answer: 1,
+      topic: "Sensor networks",
+      week: 3
+    },
+    {
+      question: "The HART protocol was designed for:",
+      options: ["Home automation networking", "Networked Smart Field devices", "Vehicular networking", "All of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 3
+    },
+    {
+      question: "In Near Field Communication (NFC), the active devices are able to",
+      options: ["only collect information", "only transmit information", "collect and transmit information", "only receive information"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 3
+    }
+  ,  
     {
       question: "State whether the following statement is true or false. Statement: Wired HART lacks a network layer.",
       options: ["True", "False"],
@@ -1346,6 +2962,332 @@ const data = [
     }
   ,  
   // ********************************** Week 2 *******************************************************
+
+    {
+      question: "Which of these statements is NOT TRUE?",
+      options: ["MQTT is a publish-subscribe protocol", "MQTT is a client-server protocol", "MQTT is a lightweight messaging protocol", "MQTT is used in conjunction with TCP/IP"],
+      answer: 3,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "MQTT is designed for:",
+      options: ["Remote connections", "Limited bandwidth", "Small-code footprint", "All of these"],
+      answer: 3,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "CoAP is a:",
+      options: ["Physical layer protocol", "Application layer protocol", "Service layer protocol", "Network layer protocol"],
+      answer: 1,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "REST stands for:",
+      options: ["Representational State Transfer", "Resourceful Sensor Transfer", "Resourceful State Transport", "None of these"],
+      answer: 0,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "AMQP is designed for connecting:",
+      options: ["Constrained networks", "LANs and WANs", "Systems and Business processes", "None of these"],
+      answer: 2,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "AMQP provides the following message delivery guarantees:",
+      options: ["At most once", "At least once", "Exactly once", "All of these"],
+      answer: 3,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Which modulation scheme is followed by IEEE 802.15.4 standard?",
+      options: ["BPSK", "QPSK", "DSSS", "All of these"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Collision prevention in 802.15.4 standard is provided by means of:",
+      options: ["CSMA-CA", "CSMA-CD", "ALOHA", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of these is a routing protocol for low power lossy networks over IPv6?",
+      options: ["RPL", "OSPF", "Both a and b", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "RPL supports:",
+      options: ["Message confidentiality", "Loop detection in the routes", "Data path validation", "All of these"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of the following controls the publish-subscribe messaging pattern in MQTT.",
+      options: ["MQTT broker", "MQTT client", "MQTT server", "None of these"],
+      answer: 0,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "The MQTT publish-subscribe protocol is:",
+      options: ["Event driven", "Broker driven", "Client driven", "All of these"],
+      answer: 0,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Which of these is TRUE for XMPP?",
+      options: ["It is decentralized", "It supports interoperability", "It does not guarantee QoS", "All of these"],
+      answer: 3,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "In AMQP, link initiation in order to send and receive messages is done by which frame type?",
+      options: ["OPEN", "ATTACH", "BEGIN", "FLOW"],
+      answer: 1,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Which statement is TRUE with respect to the IEEE 802.15.4 standard?",
+      options: ["It is a low data-rate standard.", "Used for architecting wireless PANs", "Uses only two layers– PHY and MAC", "All of these"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "In the network layer, Zigbee follows which routing scheme?",
+      options: ["AODV", "DSDV", "RIPv2", "OSPF"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    }
+,  
+    {
+      question: "Brokers in MQTT ",
+      options: ["Connects publishers and subscribers", "Classify the sensor data into topics", "Both of the above", "None of the above"],
+      answer: 2,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "In AMQP, new link initiation in order to send and receive messages is done by which frame type?",
+      options: ["OPEN", "ATTACH", "BEGIN", "FLOW"],
+      answer: 1,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "In the network layer, Zigbee follows which routing scheme?",
+      options: ["AODV", "DSDV", "RIPv2", "OSPF"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of the following standards is known as low data-rate WPAN?",
+      options: ["IEEE 802.15.2", "IEEE 802.15.4", "IEEE 802.15e", "IEEE 802.15c"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "MQTT topics are",
+      options: ["Simple floating point", "Simple integer", "Simple symbol", "Simple string"],
+      answer: 3,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "CoAP stands for",
+      options: ["Contention Application Protocol", "Constrained Application Protocol", "Cluster Application Protocol", "Continuous Application Protocol"],
+      answer: 1,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Collision prevention in 802.15.4 standard is provided by means of:",
+      options: ["CSMA-CA", "CSMA-CD", "ALOHA", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "RPL supports:",
+      options: ["Message confidentiality", "Loop detection in the routes", "Data path validation", "All of these"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "XMPP protocol is",
+      options: ["Service-oriented middleware based on Hyper Text Markup Language (HTML)", "Message-oriented middleware based on Extensible Markup Language (XML)", "Message-oriented middleware based on Hyper Text Markup Language (HTML)", "Service-oriented middleware based on Extensible Markup Language (XML)"],
+      answer: 1,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Which statement is TRUE with respect to the IEEE 802.15.4 standard?",
+      options: ["It is a low data-rate standard.", "Used for architecting wireless PANs", "Operates in the ISM band", "All of these"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of the following is/are the feature(s) of AMQP?",
+      options: ["Targeted QoS", "Persistence", "High speed protocol", "All of these"],
+      answer: 3,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "IEEE 802.15.4 uses which of the following for accessing the channel?",
+      options: ["Carrier sense multiple access (CSMA)", "Carrier sense multiple access with collision detection (CSMA‐CD)", "Carrier sense multiple access with collision avoidance (CSMA‐CA)", "None of these"],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "LOADing routing uses:",
+      options: ["AODV", "DSDV", "RIPv2", "OSPF"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of the following is true for ZigBee Router (ZR)? ",
+      options: ["It contains just enough functionality to talk to the parent node, and it cannot relay data from other devices.", "This allows the node to be asleep a significant amount of the time thereby enhancing battery life.", "Capable of running applications, as well as relaying information between nodes connected to it.", "Memory requirements and cost of ZEDs are quite high, as compared to ZR or ZC."],
+      answer: 2,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "6LoWPAN Dispatch header is used to",
+      options: ["Terminate communication", "Initiate communication", "Pause communication", "None of these"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 2
+    }
+  ,  
+    {
+      question: "Which of the following protocol is used to implement device management for mobile devices?",
+      options: ["OMA-DM", "Websocket", "Alljoyn", "DNS-SD"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "In LOADng, can intermediate routers respond to Route Requests (RREQs)?",
+      options: ["Yes, in any case", "Yes, only when RREQ flooding occurs", "Yes, only if they have active routes to the sought destination", "No"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of the following functions as the network bridge in IEEE 802.15.4 network?",
+      options: ["PAN Coordinator", "Router", "Device", "None of these"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of the following allow communication between Zigbee and no-Zigbee devices?",
+      options: ["layer-5 application-level bridge", "layer-7 application-level gateway", "layer-7 application-level bridge", "layer-5 application-level gateway"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Statement I: RFIDs are radio-frequency-based.\nStatement II: RFID devices can act as both readers as well as tags.\nWhich one of the following is correct?",
+      options: ["Statement I is true but Statement II is false", "Statement I is false but Statement II is true", "Both the statements are true", "Both the statements are false"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "In AMQP, which of the following functionality defines its component “exchange”?",
+      options: ["linkage between various queues", "receives messages from various queues", "defines rules for message routing to various queues", "routing the messages to various queues"],
+      answer: 3,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of the following is designed to have low overhead and better scalability in terms of dense networks?",
+      options: ["LOADng", "RPL", "Both LOADng and RPL", "AODV"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "Which of the following AMQP frame type controls the message flow rate?",
+      options: ["Transfer", "Flow", "Control", "Disposition"],
+      answer: 1,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Does 6LoWPAN allow interoperability between IEEE802.15.4-based wireless devices and other IP-based devices?",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "In the context of XMPP, which of the following correctly defines BOSH?",
+      options: ["XML streaming", "HTTP binding", "Both XML streaming and HTTP binding", "Binary encoding"],
+      answer: 1,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Does MQTT support event-driven architecture?",
+      options: ["Yes", "No"],
+      answer: 0,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Which of the following is the acronym for “Extensible Messaging and Presence Protocol”?",
+      options: ["EMPP", "XMLP", "XMPP", "XMP"],
+      answer: 2,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "An IoT network requires communication mechanism, which is capable of synchronous as well as asynchronous communication. The mechanism should support both request-response, as well as publish-subscribe models. Which of the following protocol would be best suited for such a mechanism?",
+      options: ["AMQP", "CoAP", "MQTT", "None of these"],
+      answer: 1,
+      topic: "MQTT CoAP XMPP AMQP",
+      week: 2
+    },
+    {
+      question: "Which of the following technique is used to transmit data frames in Beacon-enabled IEEE 802.15.4 networks?",
+      options: ["unslotted CSMA/CA", "slotted CSMA/CA", "unslotted CSMA/CD", "slotted CSMA/CD"],
+      answer: 1,
+      topic: "Connectivity technologies",
+      week: 2
+    },
+    {
+      question: "What is the maximum size of hop limit in 6LoWPAN packet format?",
+      options: ["8-bit unsigned integer", "16-bit unsigned integer", "8-bit signed integer", "16-bit signed integer"],
+      answer: 0,
+      topic: "Connectivity technologies",
+      week: 2
+    }
+  ,  
     {
       question: "The full form of MQTT is",
       options: [
@@ -1766,6 +3708,505 @@ const data = [
     }
   ,  
   // ****************************** Week 1 ************************************************
+  
+    {
+      question: "Internet of Things (IoT) can be integrated with which of these separate domains: ",
+      options: ["Cloud-based storage and computing", "Cyber Physical Systems", "Big-data networks", "All of these"],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "In the current market scenario, IoT captures the maximum share in which one of these?",
+      options: ["Industry", "Security", "Healthcare", "Home automation"],
+      answer: 0,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Why is IPv6 preferred over IPv4 for IoT implementations?",
+      options: ["Larger addressing range", "More security", "Both of the above", "Neither a or b"],
+      answer: 2,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "The main function of the IoT Gateway can be summarized as:",
+      options: [
+        "Forwarding packets between LAN and WAN on the IP layer.",
+        "Performs application layer functions between IoT nodes and other entities.",
+        "Enables local, short-range communication between IoT devices.",
+        "All of these"
+      ],
+      answer: 0,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Gyroscope is a sensor which measures:",
+      options: ["Acceleration", "Velocity", "Physical orientation", "Pressure"],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "The approximation of the measured property sensed by a digital sensor induces:",
+      options: ["Quantization error", "Hysteresis error", "Aliasing error", "All of these"],
+      answer: 0,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Pneumatic actuators depend on for their operation.",
+      options: ["Fluids", "Powder", "Air", "None of these"],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "A DCmotor is a type of :",
+      options: ["Pneumatic actuators", "Hydraulic actuators", "Electrical actuators", "Mechanical actuator"],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Which of these is NOT a part of the Service Layer of the IoT Service Oriented Architecture?",
+      options: ["Service integration", "Service repository", "Business logic", "Data sensing and actuation protocols."],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of these is NOT related to IoT scalability?",
+      options: ["Flexibility within Internet.", "Large scale deployment.", "Real-time connectivity of billions of devices.", "Range of each sensor node."],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following is true?",
+      options: ["IoT is a subset of M2M", "M2M is a subset of IoT", "IoT is a subset of CPS", "CPS is a subset of Web of Things (WoT)"],
+      answer: 1,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "IoT Proxy operates in:",
+      options: ["Application layer", "Network layer", "MAC layer", "Physical layer"],
+      answer: 0,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which one of these is the first technology in the chronological order of the evolution of IoT?",
+      options: ["ATM", "Web", "Smart City", "Smart healthcare"],
+      answer: 0,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "The protocol IKEv2 stands for:",
+      options: ["Information Key Exchange version 2", "Internet Key Exchange version 2", "Internet Key Exclusion version 2", "Inter-Key Exclusion version 2"],
+      answer: 1,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "The phenomenon of the output signal slowly changing, independent of the measured property is called:",
+      options: ["Aliasing", "Drift", "Hysteresis", "None of these"],
+      answer: 1,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Which of these statements regarding sensors is TRUE?",
+      options: ["Sensors are input devices.", "Sensors can be analog as well as digital", "Sensors respond to some external stimuli.", "All of these."],
+      answer: 3,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Light activated polymers (LAPs) are a special type of:",
+      options: ["Light dependent resistors", "Shape memory polymers", "Solar cells", "None of these"],
+      answer: 1,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Which of these is a part of the Sensing Layer of the IoT Service Oriented Architecture?",
+      options: ["Service integration", "Service repository", "Business logic", "Data sensing and actuation protocols."],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "A DCmotor is a type of :",
+      options: ["Pneumatic actuators", "Hydraulic actuators", "Electrical actuators", "Mechanical actuator"],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    }
+  ,  
+    {
+      question: "The main function of an IoT Gateway can be summarized as:",
+      options: [
+        "Forwarding packets between LAN and WAN on the IP layer.",
+        "Performing application layer functions between IoT nodes and other entities.",
+        "Enabling local, short-range communication between IoT devices.",
+        "All of these"
+      ],
+      answer: 0,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following is true?",
+      options: [
+        "IoT is a subset of M2M",
+        "M2M is a subset of IoT",
+        "IoT is a subset of CPS",
+        "CPS is a subset of Web of Things (WoT)"
+      ],
+      answer: 1,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "M2M is a term introduced by",
+      options: [
+        "IoT service providers",
+        "Fog computing service providers",
+        "Telecommunication service providers",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "The number of possible addresses can be achieved with IPv6 addressing",
+      options: [
+        "2^6",
+        "2^26",
+        "2^32",
+        "2^128"
+      ],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of these is NOT a part of the Service Layer of the IoT Service Oriented Architecture?",
+      options: [
+        "Service integration",
+        "Service repository",
+        "Business logic",
+        "Data sensing and actuation protocols."
+      ],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of these statements regarding sensors is TRUE?",
+      options: [
+        "Sensors are input devices.",
+        "Sensors can be analog as well as digital",
+        "Sensors respond to some external stimuli.",
+        "All of these."
+      ],
+      answer: 3,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Which of these is NOT related to IoT scalability?",
+      options: [
+        "Flexibility within Internet.",
+        "Large scale deployment.",
+        "Real-time connectivity of billions of devices.",
+        "Range of each sensor node."
+      ],
+      answer: 3,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Which statement is NOT TRUE:",
+      options: [
+        "IoT WAN connects various network segments.",
+        "IoT WAN is geographically wide.",
+        "IoT WAN is organizationally wide.",
+        "None of these."
+      ],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Based on the data type, sensor can be classified in which of the two categories?",
+      options: [
+        "Analog and Digital",
+        "Isomorphic and Homomorphic",
+        "Scalar and Vector",
+        "Solid and Liquid"
+      ],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Temperature, Speed, Pressure, Displacement, and Strain are",
+      options: [
+        "Analog quantity",
+        "Digital quantity",
+        "Sometime analog, sometime digital",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Which of these is NOT a feature of Shape Memory Alloys (SMA)?",
+      options: [
+        "Low density",
+        "Low strain recovery",
+        "Biocompatibility",
+        "Biodegradability"
+      ],
+      answer: 1,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "A mechanical actuator converts",
+      options: [
+        "rotary motion in to electrical power",
+        "electrical power in to rotary motion",
+        "rotary motion in to linear motion",
+        "Linear motion in to rotary motion"
+      ],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "The approximation of the measured property sensed by a digital sensor induces:",
+      options: [
+        "Quantization error",
+        "Hysteresis error",
+        "Aliasing error",
+        "All of these"
+      ],
+      answer: 0,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Rack and pinion are an example of",
+      options: [
+        "Electrical actuator",
+        "Hydraulic actuator",
+        "Mechanical actuator",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "The phenomenon of the output signal slowly changing independent of the measured property is called:",
+      options: [
+        "Aliasing",
+        "Drift",
+        "Hysteresis",
+        "None of these"
+      ],
+      answer: 1,
+      topic: "Sensors & Actuators",
+      week: 1
+    }
+  ,  
+    {
+      question: "Which of the following is a static mechanism for address allocation of IoT nodes?",
+      options: [
+        "Configuration over a management interface",
+        "IPv6 address based on a hardware identifier",
+        "Both configuration over a management interface & based on a hardware identifier",
+        "IoT nodes can’t be configured statically"
+      ],
+      answer: 2,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following error is commonly found in heating of metal strips?",
+      options: [
+        "quantization error",
+        "aliasing error",
+        "hysteresis error",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Identify the component shown below.",
+      image:"images/ass1que3extra.png",
+      options: [
+        "Gas sensor",
+        "PIR sensor",
+        "Light sensor",
+        "Speaker"
+      ],
+      answer: 1,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "“X” performs active application layer functions between IoT nodes and other entities. What is X?",
+      options: [
+        "IoT node",
+        "IoT proxy",
+        "IoT gateway",
+        "IoT Network"
+      ],
+      answer: 1,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following field in IPv4 header format indicates that it is concerned with reliable transmission?",
+      options: [
+        "Traffic class",
+        "Hop limit",
+        "Fragment offset",
+        "Destination address"
+      ],
+      answer: 2,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following is a function of IoT Gateway?",
+      options: [
+        "Data forwarding",
+        "Device management",
+        "Protocol conversion",
+        "All of these"
+      ],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following actuator converts pressure into force?",
+      options: [
+        "Mechanical actuators",
+        "Pneumatic actuators",
+        "Electric actuators",
+        "Magnetic actuators"
+      ],
+      answer: 1,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Which of the following mechanism for address autoconfiguration provide more control on the allocated addresses?",
+      options: [
+        "DHCPv6",
+        "SLAAC",
+        "Both DHCPv6 and SLAAC",
+        "None of these"
+      ],
+      answer: 0,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following can measure position?",
+      options: [
+        "Potentiometer",
+        "Encoder",
+        "Both potentiometer & encoder",
+        "None of these"
+      ],
+      answer: 2,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "In a scenario when the IoT proxy has uplink connectivity, does the IoT LAN need global addressing mandatorily?",
+      options: [
+        "Yes",
+        "No",
+        "Not applicable"
+      ],
+      answer: 1,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following is TRUE?",
+      options: [
+        "M2M is not a subset of IoT",
+        "WoT and IoT are same",
+        "IoT and M2M are same",
+        "None of these"
+      ],
+      answer: 3,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Statement I: Aliasing error occurs if the input variable or added noise changes periodically at a frequency proportional to the multiple of the sampling rate.  \n Statement II: If the signal is monitored digitally, the sampling frequency can cause a dynamic error triggering aliasing error.",
+      options: [
+        "Both Statement I and II are false",
+        "Both Statement I and II are true",
+        "Statement I is false but Statement II is true",
+        "Statement I is true but Statement II is false"
+      ],
+      answer: 1,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Does polymer-based actuator find application in manufacturing artificial muscles?",
+      options: [
+        "Yes",
+        "No"
+      ],
+      answer: 0,
+      topic: "Sensors & Actuators",
+      week: 1
+    },
+    {
+      question: "Unique Local Addresses are intended to allow routing over a network that expands over multiple links and routing hops, and even can expand over multiple networks. Can these addresses prevent address collision?",
+      options: [
+        "Yes",
+        "No",
+        "Not Applicable"
+      ],
+      answer: 0,
+      topic: "Basics of IoT",
+      week: 1
+    },
+    {
+      question: "Which of the following is an example of vector sensor?",
+      options: [
+        "Pressure sensor",
+        "Strain sensor",
+        "Both pressure and strain sensors",
+        "Sound sensor"
+      ],
+      answer: 3,
+      topic: "Sensors & Actuators",
+      week: 1
+    }
+  ,  
   {
     question: "Which of the following are the enablers of IoT?",
     options: ["RFID", "Nanotechnology", "Sensors", "All of the these"],
